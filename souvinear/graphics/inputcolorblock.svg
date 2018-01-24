@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1599 -48.955 39.763 36.955">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-rule: evenodd;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-5 {
+        fill: #371244;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Path_349" data-name="Path 349" class="cls-1" d="M6-43H28.694a5.063,5.063,0,0,1,4.45,2.513l6.519,11.751h0a8.616,8.616,0,0,1,0,8.427L33.144-8.557h0a5.063,5.063,0,0,1-4.45,2.513H6a4.821,4.821,0,0,1-5-4.619V-38.381H1A4.821,4.821,0,0,1,6-43Z" transform="translate(-1 43)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_348" data-name="Path 348" class="cls-2" d="M-133,585.873H635V-1297H-133Z" transform="translate(133 1297)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_408" data-name="Group 408" class="cls-3" transform="translate(1599 -48.955)">
+    <g id="Group_407" data-name="Group 407" class="cls-4" transform="translate(-134 -1158.549)">
+      <path id="Path_347" data-name="Path 347" class="cls-5" d="M-4-1.806H45.763V-48H-4Z" transform="translate(133 1201.93)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+.concert_chunk{
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: thin solid rgba(193, 193, 193, .5);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.uneeded{
+    display: none;
+}
