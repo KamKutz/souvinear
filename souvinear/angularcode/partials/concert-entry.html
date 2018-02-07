@@ -1,0 +1,22 @@
+<div ng-app="myApp" ng-controller="concertCtrl">
+ 
+  <div ng-repeat="entry in entries">
+    <p>{{ entry.concertDate }}
+   {{ entry.concertTime }} {{ entry.headliner}} {{ entry.suppAct}} {{ entry.venue }} {{ entry.entryText }}</p>
+      
+    <div id="gather">
+    <p>
+      <input type="text" name="headliner" id="headliner" value="entry.headliner" class="uneeded">
+      </p>   
+    <p>
+      <input type="date" name="concert_date" id="concert_date" value="entry.concertDate" class="uneeded">
+    </p>                 
+
+    <input type="submit" name="submit" value="Edit">
+      <hr>
+
+    </div>
+      
+  </div>
+ 
+</div>

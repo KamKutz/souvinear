@@ -30,10 +30,11 @@ app.config(['$routeProvider',
                 role: '0'
             })
             .when('/add-entry', {
-            title: 'Add Entry',
-            templateUrl: 'partials/add-entry.html',
-            controller: 'authCtrl' 
+                title: 'Add Entry',
+                templateUrl: 'partials/add-entry.html',
+                controller: 'authCtrl' 
             })
+            .when('/')
             .otherwise({
                 redirectTo: '/login'
             });
@@ -42,7 +43,7 @@ app.config(['$routeProvider',
         $rootScope.$on("$routeChangeStart", function (event, next, current) {
             $rootScope.authenticated = false;
             Data.get('session').then(function (results) {
-                if (results.uid) {
+                if (results.id) {
                     $rootScope.authenticated = true;
                     $rootScope.id = results.id;
                     $rootScope.username = results.username;

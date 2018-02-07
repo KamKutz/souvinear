@@ -1,72 +1,76 @@
-<div class="breadcrumbs" id="breadcrumbs">
-    <ul class="breadcrumb">
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li class="active">SignUp</li>
-    </ul>
-</div>
-<div class="page-content">
-    <div class="row">
-        <div class="space-6"></div>
-        <div class="col-sm-6 col-sm-offset-1">
-            <div id="login-box" class="login-box visible widget-box no-border">
-                <div class="widget-body">
-                    <div class="widget-main">
-                        <h4 class="header blue lighter bigger">
-                            Signup for AngularCode
-                        </h4>
-                        <br/>
-                        <form name="signupForm" class="form-horizontal" role="form">
-                            <div class="form-group">
-                                <label class="col-sm-5 control-label no-padding-right" for="username">Username</label>
-                                <div class="col-sm-7">
-                                    <span class="block input-icon input-icon-right">
-                                        <input type="text" class="form-control" placeholder="Username" name="username" ng-model="signup.username" focus/>
-<!--                                        <span ng-show="signupForm.username.$error.username" class="help-inline">Email is not valid</span> -->
-                                    </span>
-                                </div>
+	<!-- PAGE CONTENT -->
+
+		<!-- Portrait View Start -->
+		<div class="port_wrap">
+
+				<div class="intro_wrap">
+					<h3>souvinear</h3>
+					<svg xmlns="http://www.w3.org/2000/svg" width="174.61" height="89.4" viewBox="-35 -20 300 89.4">
+					  <g class="ticket_11" id="Ticket_11">
+					    <path class="cls-one" d="M1015,890.74v19.42s16.15,6,16.15,26.34S1015,961.87,1015,961.87v18.26h127.46v-89.4Z" transform="translate(-1015 -890.74)"/>
+					    <rect class="cls-two" x="115.66" y="5.99" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="115.66" y="33.5" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="115.66" y="61.01" width="4" height="17.99" rx="2" ry="2"/>
+
+					  </g>
+					  <g class="ticket_22" id="Ticket_22">
+					    <path class="cls-one" d="M1148.6,890.74v89.4h61V961.36s-15.38-8.52-15.38-25.92,15.38-25.35,15.38-25.35V890.74Z" transform="translate(-1015 -890.74)"/>
+					    <rect class="cls-two" x="139.8" y="8.19" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="139.8" y="35.71" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="139.8" y="63.22" width="4" height="17.99" rx="2" ry="2"/>
+					     <rect class="cls-two bar_scan" x="0" y="0" width="10" height="90" rx="2" ry="2"/>
+					  </g>
+					</svg>
+				</div>
+            
+                    <div class="form-wrap">
+                        <form name="signupForm" class="form-wrap" role="form">
+                            <div class="form-group_1">
+                
+                                <img src="./graphics/user_white.svg" alt="User Icon">
+                                        <input type="text" placeholder="Username" id="username" name="username" ng-model="signup.username" required/>                       
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-5 control-label no-padding-right" for="password">Password</label>
-                                <div class="col-sm-7">
-                                    <span class="block input-icon input-icon-right">
-                                <input type="password" class="form-control" name = "password" placeholder="Password" ng-model="signup.password" required/>
+                            <div class="form-group_2">
+                                <img src="./graphics/lock2.svg" alt="Lock Icon">
+                                <input type="password" name="password" placeholder="Password" ng-model="signup.password" required/>
                                 <small class="errorMessage" data-ng-show="signupForm.password.$dirty && signupForm.password.$invalid"> Enter Password.</small>
-                            </span>
-                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-5 control-label no-padding-right" for="password2">Confirm Password</label>
-                                <div class="col-sm-7">
-                                    <span class="block input-icon input-icon-right">
-                                <input type="password" class="form-control" name="password2" placeholder="Password Again" ng-model="signup.password2" password-match="signup.password" required/>                                
+                            <div class="form-group_3">
+                                <img src="./graphics/lock2.svg" alt="Lock Icon">
+                                <input type="password" name="password-confirm" id="password-confirm" placeholder="Confirm Password" ng-model="signup.password2" password-match="signup.password" required/>                                
                                 <small class="errorMessage" data-ng-show="signupForm.password2.$dirty && signupForm.password2.$error.required"> Enter password again.</small>
 
                                <small class="errorMessage" data-ng-show="signupForm.password2.$dirty && signupForm.password2.$error.passwordNoMatch && !signupForm.password2.$error.required"> Password do not match.</small>
 
-                            </span>
-                                </div>
                             </div>
         
-                            <div class="form-group">
-                                <span class="lbl col-sm-5"> </span>
-                                <div class="col-sm-7">
-                                    <button type="submit" class="width-35 pull-right btn btn-sm btn-primary" ng-click="signUp(signup)" data-ng-disabled="signupForm.$invalid">
-                                        Sign Up
+                            <div class="log-in_wrap">
+    
+                                    <button type="submit" class="log-in" ng-click="signUp(signup)" data-ng-disabled="signupForm.$invalid">
+                                        <h4>create account</h4>
                                     </button>
                                 </div>
+                    
+                            <a href="#/login">
+                            <div class="no-account-wrap">have an account? 
                             </div>
-                            </fieldset>
-                            <span class="lbl col-sm-5"> </span>
-                            <div class="col-sm-7">Already have an account? <a href="#/login">SignIn</a>
-                            </div>
+                                <div class="bottom_bar_wrap">
+					<svg class="bottom_signup" xmlns="http://www.w3.org/2000/svg" width="375" height="104.2" viewBox="0 0 375 104.2">
+					    <linearGradient id="linear-gradient" y1="586.97" x2="375" y2="586.97" gradientUnits="userSpaceOnUse">
+					      <stop offset="0" stop-color="#a2d7d1"/>
+					      <stop offset="1" stop-color="#f7b4de"/>
+					    </linearGradient>
+					    <linearGradient id="linear-gradient-2" y1="621.85" x2="375" y2="621.85" gradientUnits="userSpaceOnUse">
+					      <stop offset="0" stop-color="#34d1ca"/>
+					      <stop offset="1" stop-color="#fe5893"/>
+					    </linearGradient>
+					  <path class="cls-1_one" d="M0,568.43S22.64,583,115,583,201.91,562.44,302,562.44c63.55,0,73,12.74,73,12.74v36.31H0Z" transform="translate(0 -562.44)"/>
+					  <path class="cls-2_two" d="M375,584.9s-16.62-7.85-86-7.85S176.37,599.63,70.67,599.63C10,599.63,0,584.36,0,584.36v82.28H375Z" transform="translate(0 -552.44)"/>
+					</svg>
+					<h3>Log In</h3>
+				</div>
+                            </a>
                         </form>
-                    </div>
-                </div>
             </div>
-
         </div>
-    </div>
-</div>
-<!-- /.page-content -->
+	<!-- Portrait View End  -->

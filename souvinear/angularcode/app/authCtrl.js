@@ -12,14 +12,15 @@ app.controller('authCtrl', function ($scope, $rootScope, $routeParams, $location
             }
         });
     };
-    $scope.signup = {username:'',password:''};
-    $scope.signUp = function (customer) {
+    $scope.signup = {username:'', password:''};
+    $scope.signUp = function () {
         Data.post('signUp', {
-            customer: customer
+            'username': $scope.signup.username, 'password': $scope.signup.password
         }).then(function (results) {
             Data.toast(results);
             if (results.status == "success") {
                 $location.path('dashboard');
+                console.log(results);
             }
         });
     };

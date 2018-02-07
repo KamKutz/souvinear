@@ -44,34 +44,27 @@ $app->post('/login', function() use ($app) {
 $app->post('/signUp', function() use ($app) {
     $response = array();
     $r = json_decode($app->request->getBody());
-    verifyRequiredParams(array('username', 'password'),$r->customer);
+//    verifyRequiredParams(array('username', 'password'),$r->customer);
     require_once 'passwordHash.php';
     require_once 'dbConnect.php';
     $db = new DbHandler();
-    $username = $r->customer->username;
-//    $name = $r->customer->name;
-//    $email = $r->customer->email;
-//    $address = $r->customer->address;
-    $password = $r->customer->password;
-    $isUserExists = $db->getOneRecord("select 1 from user_accounts where username='$username'");
+    $username = $r->username;
+
+    $password = $r->password;
+    $isUserExists = $db->getOneRecord("select * from user_accounts where username='$username'");
     if(!$isUserExists){
 //        $r->customer->password = sha1($password);
 //        $hashed_password = sha1($password);
-        $tabble_name = "user_accounts";
+        $table_name = "user_accounts";
         $column_names = array('username', 'hashed_password');
 //        
-//        $result = "INSERT INTO user_accounts (";
-//        $result .= " username, hashed_password";
-//        $result .= ") VALUES (";
-//        $result .= " '{$username}', '{$hashed_password}'";
-//        $result .= ")"; 
-      
-        //$result = mysqli_query($connection, $query);
-       $result = $db->insertIntoTable($r->customer, $column_names, $tabble_name);
+
+       $result = $db->insertIntoTable($r->customer, $column_names, $table_name);
         if ($result != NULL) {
             $response["status"] = "success";
             $response["message"] = "User account created successfully";
             $response["id"] = $result;
+            $response["UA-check"] = $r->customer->password;
             if (!isset($_SESSION)) {
                 session_start();
             }
@@ -83,6 +76,7 @@ $app->post('/signUp', function() use ($app) {
         } else {
             $response["status"] = "error";
             $response["message"] = "Failed to create user. Please try again";
+            
             echoResponse(201, $response);
         }            
     }else{
