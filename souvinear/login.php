@@ -70,9 +70,9 @@
 					  </g>
 					  <g class="ticket_22" id="Ticket_22">
 					    <path class="cls-one" d="M1148.6,890.74v89.4h61V961.36s-15.38-8.52-15.38-25.92,15.38-25.35,15.38-25.35V890.74Z" transform="translate(-1015 -890.74)"/>
-<!-- 					    <rect class="cls-two" x="139.8" y="8.19" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="139.8" y="8.19" width="4" height="17.99" rx="2" ry="2"/>
 					    <rect class="cls-two" x="139.8" y="35.71" width="4" height="17.99" rx="2" ry="2"/>
-					    <rect class="cls-two" x="139.8" y="63.22" width="4" height="17.99" rx="2" ry="2"/> -->
+					    <rect class="cls-two" x="139.8" y="63.22" width="4" height="17.99" rx="2" ry="2"/>
 					     <rect class="cls-two bar_scan" x="0" y="0" width="10" height="90" rx="2" ry="2"/>
 					  </g>
 					</svg>
@@ -108,12 +108,8 @@
 						</div>
 
 
-
-
-
-
 				<div class="bottom_bar_wrap" onclick="jmp2LocalPage('')">
-					<svg class="bottom_signup" xmlns="http://www.w3.org/2000/svg" width="375" height="97.88" viewBox="0 0 375 97.88">
+					<svg class="bottom_signup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 97.88">
 					    <linearGradient id="linear-gradient" x1="-451.01" y1="556.78" x2="-449.83" y2="556.78" gradientTransform="matrix(375, 0, 0, -97.88, 169048, 54545.9)" gradientUnits="userSpaceOnUse">
 					      <stop offset="0" stop-color="#2dd5cc"/>
 					      <stop offset="1" stop-color="#fe5893"/>
