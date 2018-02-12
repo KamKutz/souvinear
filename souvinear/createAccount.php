@@ -117,7 +117,7 @@
 
 
 				<div class="bottom_bar_wrap" onclick="jmp2LocalPage('')">
-					<svg class="bottom_signup" xmlns="http://www.w3.org/2000/svg" width="375" height="104.2" viewBox="0 0 375 104.2">
+					<svg class="bottom_signup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 104.2">
 					    <linearGradient id="linear-gradient" y1="586.97" x2="375" y2="586.97" gradientUnits="userSpaceOnUse">
 					      <stop offset="0" stop-color="#a2d7d1"/>
 					      <stop offset="1" stop-color="#f7b4de"/>

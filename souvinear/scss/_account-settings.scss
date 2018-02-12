@@ -1,0 +1,119 @@
+.profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.user_info {
+	margin-top: 1rem;
+	h4 {
+		font-size: 1em;
+		color: #371443;
+		font-family: 'Averia Sans Libre', cursive;
+		margin: 0;
+		padding-bottom: 0.25rem;
+	}
+}
+
+
+.user {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  background-image: url('../graphics/anthony.jpg');
+}
+
+
+.user-pin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	h2 {
+		color: #371443;
+		font-family: 'Averia Sans Libre', cursive;
+		font-size: 1em;
+		margin-top: 2rem;
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+
+
+	.user_info {
+		position: relative;
+		.user_flex {
+			width: 100%;
+			height: 70px;
+
+			background-color: #e2e2eb;
+			margin-bottom: 2px;
+			padding-left: 6rem;
+
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+
+			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 5px;
+				margin-left: 0;
+				color: #371443;
+
+			}
+		}
+		.user_temp {
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			margin-top: -4.5rem;
+			left: 0;
+		}
+		.user_edit {
+			width: 35px;
+			position: absolute;
+			margin-top: -2.7rem;
+			right: 1.1rem;
+		}
+	}
+
+.button_section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 1.75rem;
+}
+
+.profile_button {
+	margin-top: 1.15rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

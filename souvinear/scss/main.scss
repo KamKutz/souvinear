@@ -5,8 +5,11 @@
 @import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Muli');
 
 @import "log-in.scss";
-// @import "log-in-fb.scss";
 @import "svg-styles.scss";
+@import "create-account.scss";
+@import "spotify-log-in.scss";
+@import "swap-box.scss";
+@import "account-settings.scss";
 
 .nav {
 	img {
@@ -49,7 +52,6 @@
 				font-size: 0.8em;
 				margin: 0;
 				margin-bottom: 5px;
-
 			}
 		}
 		.legend {
