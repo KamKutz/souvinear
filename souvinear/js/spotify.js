@@ -19,7 +19,6 @@ var template = function (data) {
         <div class="now-playing__artist">${data.item.artists[0].name}</div>
         <div class="now-playing__status">${data.is_playing ? 'Playing' : 'Paused'}</div>
         <div class="progress">
-        <div class="user_profile">${data.popularity}</div>
         <div class="progress">
           <div class="progress__bar" style="width:${data.progress_ms * 100 / data.item.duration_ms}%"></div>
         </div>

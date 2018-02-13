@@ -191,6 +191,7 @@ a {
   margin-top: 3rem;
   width: 100%; }
   .log-in_wrap .log-in {
+    padding: 0;
     border-radius: 50px;
     width: 12rem;
     border: none;
@@ -223,12 +224,14 @@ a {
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start; }
+          justify-content: flex-start;
+  z-index: 100; }
   .no_account_wrap h4 {
     width: 100%;
     position: fixed;
     bottom: 1.9rem;
     color: white;
+    z-index: 100;
     font-family: 'Muli', sans-serif;
     font-style: italic;
     font-size: 0.9em;
@@ -247,7 +250,7 @@ a {
     width: 100%;
     position: fixed;
     bottom: 0;
-    z-index: -1; }
+    z-index: 0; }
   .bottom_bar_wrap h3 {
     position: absolute;
     color: white;
@@ -716,6 +719,7 @@ a {
     bottom: 2.3rem;
     left: 0.7rem;
     color: white;
+    z-index: 100;
     font-family: 'Muli', sans-serif;
     font-style: italic;
     font-size: 0.7em; }
@@ -817,6 +821,33 @@ a {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 4px 0px #248d8f, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5);
           box-shadow: 0px 4px 0px #248d8f, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5); }
+
+.spotify_pin_wrap {
+  width: 100%;
+  background-color: #ededf7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .spotify_pin_wrap h4 {
+    font-family: 'Muli', sans-serif;
+    color: #371443;
+    font-style: italic;
+    font-size: 0.9em; }
+  .spotify_pin_wrap img {
+    width: 55px;
+    height: 55px;
+    margin-top: 0;
+    margin-bottom: 15px; }
 
 .pinned_container {
   margin-bottom: 1.2rem; }

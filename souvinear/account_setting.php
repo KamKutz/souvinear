@@ -1,3 +1,5 @@
+<?php require_once 'includes/initialize.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

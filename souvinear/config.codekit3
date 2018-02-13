@@ -9,18 +9,11 @@
 	],
 "creatorBuild": "26261",
 "files": {
-	"\/account_setting.html": {
+	"\/account_setting.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/account_setting.html",
-		"oF": 0
-		},
-	"\/add_concert.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/add_concert.html",
+		"oAP": "\/account_setting.php",
 		"oF": 0
 		},
 	"\/add_concert.php": {
@@ -28,13 +21,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/add_concert.php",
-		"oF": 0
-		},
-	"\/createAccount.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/createAccount.php",
 		"oF": 0
 		},
 	"\/css\/css-add2home.css": {
@@ -86,13 +72,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/error_log",
-		"oF": 0
-		},
-	"\/fb_log-in.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fb_log-in.html",
 		"oF": 0
 		},
 	"\/graphics\/add-button.svg": {
@@ -602,6 +581,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/graphics\/spotify_purple.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/graphics\/spotify_purple.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/graphics\/swap_arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -668,32 +657,11 @@
 		"oAP": "\/includes\/session_start.php",
 		"oF": 0
 		},
-	"\/index-anisa.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index-anisa.php",
-		"oF": 0
-		},
-	"\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
-		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.php",
-		"oF": 0
-		},
-	"\/journal-complete.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/journal-complete.html",
 		"oF": 0
 		},
 	"\/journal-complete.php": {
@@ -703,11 +671,18 @@
 		"oAP": "\/journal-complete.php",
 		"oF": 0
 		},
-	"\/journal-cover.html": {
+	"\/journal-completeV2.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/journal-cover.html",
+		"oAP": "\/journal-completeV2.php",
+		"oF": 0
+		},
+	"\/journal-cover.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/journal-cover.php",
 		"oF": 0
 		},
 	"\/js\/jquery-3.2.1.min.js": {
@@ -790,6 +765,13 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"\/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/login.php",
+		"oF": 0
+		},
 	"\/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -805,20 +787,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/main.php",
-		"oF": 0
-		},
-	"\/navigation.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/navigation.html",
-		"oF": 0
-		},
-	"\/navigation.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/navigation.php",
 		"oF": 0
 		},
 	"\/php\/concert_processing.php": {
@@ -967,6 +935,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/_spotify_pin.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_spotify_pin.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/_svg-styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1006,11 +987,18 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/spotify_link.html": {
+	"\/spotify_link.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/spotify_link.html",
+		"oAP": "\/spotify_link.php",
+		"oF": 0
+		},
+	"\/spotify_pin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/spotify_pin.php",
 		"oF": 0
 		},
 	"\/sql\/sloanisa_souvinear.sql": {
@@ -1020,11 +1008,11 @@
 		"oAP": "\/sql\/sloanisa_souvinear.sql",
 		"oF": 0
 		},
-	"\/swap_box.html": {
+	"\/swap_box.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/swap_box.html",
+		"oAP": "\/swap_box.php",
 		"oF": 0
 		},
 	"\/wrong.php": {
