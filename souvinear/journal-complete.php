@@ -1,5 +1,4 @@
 <?php require_once 'includes/initialize.php'; ?>
-<?php require_once 'includes/session.php'; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -23,10 +22,11 @@
   	<!-- Add2Home Styling -->
   	<link rel="stylesheet" href="css/css-add2home.css">
   	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/css-nav.css">
 
   	<!-- ICONS -->
   	<!-- iPad retina icon -->
-  	<link href="graphics/souvinear_icon-152x152.png" sizes="152x152" rel="apple-touch-icon">
+  	<link href="graphics/myreel_icon-152x152.png" sizes="152x152" rel="apple-touch-icon">
   	<!-- iPad retina icon (iOS < 7) -->
   	<link href="graphics/myreel_icon-144x144.png" sizes="144x144" rel="apple-touch-icon">
   	<!-- iPad non-retina icon -->
@@ -50,105 +50,42 @@
   	</style>
 
   </head>
+
+  <?php 
+include 'nav.php';
+?>
+
   <body>
 
-<div class="nav">
-    <img id="arrow_tog" class="arrow" src="graphics/arrow.svg" alt="Arrow">
-    <div class="nav_contain">
-        <div onclick="jmp2LocalPage('')">
-            <img src="graphics/hotspot-purple.svg" alt="Hotspot Icon">
-            <h3>Hotspots</h3>
-        </div>
-        <div onclick="jmp2LocalPage('')">
-            <img src="graphics/journal-purple.svg" alt="Journal Icon">
-            <h3>Journal</h3>
-        </div>
-        <div onclick="jmp2LocalPage('')">
-            <img src="graphics/mailbox-purple.svg" alt="Swapbox Icon">
-            <h3>Swapbox</h3>
-        </div>
-        <div onclick="jmp2LocalPage('')">
-            <img src="graphics/settings-purple.svg" alt="Settings Icon">
-            <h3>Settings</h3>
-        </div>
-    </div>
+<!-- paste kams nav here -->
 
-    <svg  id="nav_button" class="pull_down" xmlns="http://www.w3.org/2000/svg" viewBox="2038 -979 377 648.328">
-
-        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.977" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#fe5893"/>
-          <stop offset="0.27" stop-color="#d3729f"/>
-          <stop offset="0.553" stop-color="#b59eb8"/>
-          <stop offset="0.712" stop-color="#9dc1cc"/>
-          <stop offset="1" stop-color="#24d9ce"/>
-        </linearGradient>
-        <linearGradient id="linear-gradient-2" x1="0.5" y1="0.259" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#24d9ce"/>
-          <stop offset="1" stop-color="#33d9d0"/>
-        </linearGradient>
-        <linearGradient id="linear-gradient-3" y1="0.539" x2="0.94" y2="0.539" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#fff" stop-opacity="0.545"/>
-          <stop offset="1" stop-color="#fff" stop-opacity="0.749"/>
-        </linearGradient>
-      <g id="Group_493" data-name="Group 493" transform="translate(2039 -969)">
-        <g id="Group" transform="translate(-140 -10)">
-          <g id="Group-Copy" transform="translate(141)">
-            <path id="Rectangle-12-Copy" class="cls-1_1" d="M0,0H375l-.889,573.718h-375Z"/>
-          </g>
-        </g>
-        <g id="Group_492" data-name="Group 492" transform="translate(-141 -10)">
-          <path id="Rectangle-5-Copy-2" class="cls-2_2" d="M376-1.957V-75.624H1v59.459c18.589-1.163,38-10.4,82.259-14.283A468.5,468.5,0,0,1,251.1-14.6C290.315-3.54,363.268,1.613,376-1.957Z" transform="translate(140 649)"/>
-          <path id="Rectangle-4" class="cls-3_3" d="M376-14.705c-20.245,3.472-51.254,3.672-80.908,0C222.571-23.684,217.625-31.8,187.5-37.06,120.923-48.7,84.61-39.793,49.154-42.54,25.516-44.37,8.465-46.357,0-51.5Q0-22.652,0-16.152C20.422-17.543,32.471-23.381,52.5-26.5s62.545-6.978,89.567-5.393c22.213,1.3,43.778,2.088,90.956,12.7,20.208,4.544,46.344,13.037,98.266,17.321q29.134,2.4,44.711,0Z" transform="translate(140 649)"/>
-        </g>
-      </g>
-    </svg>
-</div>
-
-<?php
-
-    if (isset($_POST['submit'])) {
-    // form was submitted
-    $concert_date = $_POST['concert_date'];
-    $headliner = $_POST['headliner'];
-    
-    $user_id = $_SESSION['user'];
-    
-     $query = "SELECT * FROM concert_info WHERE concert_date = '{$concert_date}' AND headliner = '{$headliner}' AND user_id = '{$user_id}' ";
-
-     $result = mysqli_query($connection, $query);
-
-     if (!$result){ 
-         die('Database query failed.');
-     }
-
-         while ($row = mysqli_fetch_assoc($result)) {
-             
-             ?>      
-
-<div class="entry_wrap">
+<div class="entry_wrap port_wrap">
   <div class="info_wrap">
-    <h1 class="headliner"><?php echo $row['headliner']; ?></h1>
-    <h2 class="opener"><?php echo $row['supporting_act']; ?></h2>
-    <h3 class="event"><?php echo $row['concert_time']; ?></h3>
-    <h4 class="location"><?php echo $row['venue']; ?></h4>
-    <h4 class="date"><?php echo $row['concert_date']; ?></h4>
+    <h1 class="headliner">Headliner</h1>
+    <h2 class="opener">Supporting</h2>
+    <h3 class="event">Event Title</h3>
+    <h4 class="location">Location</h4>
+    <h4 class="date">Date</h4>
   </div>
 
 
-<div id="polaroid_wrap"> 
+<div id="polaroid_wrap">
   <img src="graphics/test-photo.png" alt="">
   <p class="polaroid_caption">Legendary.</p>
 </div>
 
-<!--
 <div id="fixed_edit">
   <p>want to edit this entry? </p>
-
+  <!-- <span>close</span> -->
 </div>
--->
 
 <div id="text_wrap">
-  <p><?php echo $row['entry']; ?></p>
+  <p>John Legend’s name speaks for
+him. Legend. He absoutely killed
+the set, halfway through he
+played Green Light and brought
+Andre 3000 out for a surprise
+performance. Unforgettable.</p>
 </div>
 
 <div id="collected_wrap">
@@ -192,7 +129,6 @@
           </g>
       </g>
   </svg>
-  
 <svg width="77px" height="97px" viewBox="0 0 77 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
     <defs>
         <path d="M26.6002928,0.306876406 C27.3133117,0.0860750894 28.1041996,0 28.9438731,0 C32.0182977,0 35.7344392,1.1638849 38.6146599,1.1638849 C42.2163431,1.1638849 46.4925797,-0.688600715 49.7687135,0.306876406 C53.5570951,1.45859853 56.2768866,6.18243685 59.4085403,8.44752154 C62.5045431,10.6854739 66.9899944,10.899726 69.2191163,13.9993648 C71.2971909,16.8875583 71.1836708,22.6115517 72.3188718,26.0592333 C73.4625165,29.5331116 76.6560903,32.4128847 76.6560903,36.2703586 C76.6560903,39.8331188 73.5544584,44.1059985 72.5721812,47.3497195 C71.5026529,50.872249 71.2643545,55.247109 69.2191163,58.2120216 C67.0106344,61.4117695 62.5261213,62.1658621 59.4085403,64.4870827 C56.4626468,66.6801263 54.1800484,71.2720452 50.6271507,72.4742897 C47.0517366,73.6830833 42.312976,71.6182168 38.327576,71.6182168 C34.3112161,71.6182168 29.0555169,73.7008597 25.4566482,72.4742897 C21.8605941,71.2477196 20.2047017,67.5680096 17.2334772,65.3272504 C14.2219109,63.0537454 9.01781169,61.3116604 6.86562068,58.2120216 C4.79598974,55.2312038 5.74073967,50.919029 4.6627678,47.3703027 C3.67673783,44.1209681 0,40.4580988 0,36.8887894 C0,32.841389 3.82778524,29.1672925 5.08307363,25.5455896 C6.31866019,21.9809581 5.76700879,16.657401 8.00926533,13.7140072 C10.2702855,10.7453522 15.2323336,9.85279094 18.30582,7.72336807 C21.2413935,5.69031189 23.1121297,1.38655742 26.6002928,0.306876406 Z M19.1426789,37.8346798 C19.1426789,48.5594488 27.859334,57.2530328 38.6146599,57.2530328 C49.3690477,57.2530328 58.086641,48.5594488 58.086641,37.8346798 C58.086641,27.1089752 49.3690477,18.4153911 38.6146599,18.4153911 C27.859334,18.4153911 19.1426789,27.1089752 19.1426789,37.8346798 Z" id="path-1"></path>
@@ -219,7 +155,6 @@
         </g>
     </g>
 </svg>
-
 <svg width="77px" height="97px" viewBox="0 0 77 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
     <defs>
         <path d="M26.6002928,0.306876406 C27.3133117,0.0860750894 28.1041996,0 28.9438731,0 C32.0182977,0 35.7344392,1.1638849 38.6146599,1.1638849 C42.2163431,1.1638849 46.4925797,-0.688600715 49.7687135,0.306876406 C53.5570951,1.45859853 56.2768866,6.18243685 59.4085403,8.44752154 C62.5045431,10.6854739 66.9899944,10.899726 69.2191163,13.9993648 C71.2971909,16.8875583 71.1836708,22.6115517 72.3188718,26.0592333 C73.4625165,29.5331116 76.6560903,32.4128847 76.6560903,36.2703586 C76.6560903,39.8331188 73.5544584,44.1059985 72.5721812,47.3497195 C71.5026529,50.872249 71.2643545,55.247109 69.2191163,58.2120216 C67.0106344,61.4117695 62.5261213,62.1658621 59.4085403,64.4870827 C56.4626468,66.6801263 54.1800484,71.2720452 50.6271507,72.4742897 C47.0517366,73.6830833 42.312976,71.6182168 38.327576,71.6182168 C34.3112161,71.6182168 29.0555169,73.7008597 25.4566482,72.4742897 C21.8605941,71.2477196 20.2047017,67.5680096 17.2334772,65.3272504 C14.2219109,63.0537454 9.01781169,61.3116604 6.86562068,58.2120216 C4.79598974,55.2312038 5.74073967,50.919029 4.6627678,47.3703027 C3.67673783,44.1209681 0,40.4580988 0,36.8887894 C0,32.841389 3.82778524,29.1672925 5.08307363,25.5455896 C6.31866019,21.9809581 5.76700879,16.657401 8.00926533,13.7140072 C10.2702855,10.7453522 15.2323336,9.85279094 18.30582,7.72336807 C21.2413935,5.69031189 23.1121297,1.38655742 26.6002928,0.306876406 Z M19.1426789,37.8346798 C19.1426789,48.5594488 27.859334,57.2530328 38.6146599,57.2530328 C49.3690477,57.2530328 58.086641,48.5594488 58.086641,37.8346798 C58.086641,27.1089752 49.3690477,18.4153911 38.6146599,18.4153911 C27.859334,18.4153911 19.1426789,27.1089752 19.1426789,37.8346798 Z" id="path-1"></path>
@@ -247,29 +182,11 @@
     </g>
 </svg>
 </div>
-    
-    <form action="edit_concert.php" method="post" id="edit_entry">
-    <p>
-      <input type="text" name="headliner" id="headliner" value="<?php echo $concert_info['headliner']; ?>" class="uneeded">
-      </p>   
-    <p>
-      <input type="date" name="concert_date" id="concert_date" value="<?php echo $concert_info['concert_date']; ?>" class="uneeded">
-    </p>                 
-
-    <button type="submit" name="submit">
-        <div id="edit_wrap">
-            <p>edit this entry</p>
-        </div>
-        </button>
-    </form>
-                            
-              <?php   
-         }
-    }
-        mysqli_free_result($result);
-
-
-?>
+<div id="edit_wrap">
+  <p>edit this entry</p>
 </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/js-nav.js"></script>
   </body>
 </html>

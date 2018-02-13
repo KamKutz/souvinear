@@ -1,3 +1,4 @@
+<?php require_once 'includes/initialize.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +22,9 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- Add2Home Styling -->
 	<link rel="stylesheet" href="css/css-add2home.css">
-	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/css-hotspots.css">
+    <link rel="stylesheet" href="css/css-nav.css">
 
 	<!-- ICONS -->
 	<!-- iPad retina icon -->
@@ -49,9 +52,11 @@
 	</style>
 
 </head>
+
 <?php 
 include 'nav.php';
 ?>
+
 <body>
 	<!-- PAGE CONTENT -->
 
@@ -127,9 +132,9 @@ include 'nav.php';
 
 
 
-			<div class="nav">
+			<!-- <div class="nav">
 				<img src="graphics/nav.png" alt="Nav">
-			</div>
+			</div> -->
 
 
 
@@ -250,9 +255,11 @@ include 'nav.php';
 	      touchIcon: true
 	    }
 	</script>
-	<script src="js/js-add2home.js"></script>
+    <script src="js/js-add2home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/modal.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/js-nav.js"></script>
 </body>
 
 </html>

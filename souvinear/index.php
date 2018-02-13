@@ -24,6 +24,7 @@
 	<!-- Add2Home Styling -->
 	<link rel="stylesheet" href="css/css-add2home.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/css-nav.css">
 
 	  	<!-- ICONS -->
   	<!-- iPad retina icon -->
@@ -51,7 +52,9 @@
 	</style>
 
 </head>
-
+<?php 
+include 'nav.php';
+?>
 <body>
 	<!-- PAGE CONTENT -->
 
@@ -177,6 +180,7 @@
 	</script>
 	<script src="js/js-add2home.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/js-nav.js"></script>
 </body>
 
 </html>
