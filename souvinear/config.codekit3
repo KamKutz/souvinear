@@ -7,7 +7,7 @@
 		"uuidString": "E9E80FE0-6C5B-4CD6-9228-9FA4AF0CE9E1"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26261",
 "files": {
 	"\/add_concert.html": {
 		"cB": 0,
@@ -21,6 +21,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/add_concert.php",
+		"oF": 0
+		},
+	"\/bloobdoop\/sloanisa_souvinear.sql": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bloobdoop\/sloanisa_souvinear.sql",
 		"oF": 0
 		},
 	"\/createAccount.php": {
@@ -730,7 +737,7 @@
 		"oA": 0,
 		"oAP": "\/js\/main-min.js",
 		"oF": 0,
-		"sC": 0,
+		"sC": 1,
 		"tS": 0
 		},
 	"\/login.php": {
@@ -887,17 +894,24 @@
 		"uL": 1
 		},
 	"\/scss\/main.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/main.css",
-		"oF": 2,
+		"oAP": "\/scss\/main.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/sql\/sloanisa_souvinear.sql": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sql\/sloanisa_souvinear.sql",
+		"oF": 0
 		},
 	"\/wrong.php": {
 		"cB": 0,
@@ -1486,6 +1500,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
