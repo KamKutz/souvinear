@@ -17,11 +17,15 @@
     <meta name="format-detection" content="telephone=no"> 
     <title>Add Concert</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/css-nav.css">
     <!-- Add2Home Styling -->
     <link rel="stylesheet" href="css/css-add2home.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+<?php 
+include 'nav.php';
+?>
 <body>
 	<!-- Portrait View Start -->
 <div class="port_wrap">
@@ -109,5 +113,6 @@
     
     <a href="index.php">Cancel</a>
 	</div>
+	<script src="js/js-nav.js"></script>
 </body>
 </html>

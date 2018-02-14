@@ -7,7 +7,13 @@
     <meta charset='UTF-8'>
     <title>Main</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/css-nav.css">
 </head>
+
+<?php 
+include 'nav.php';
+?>
+
 <body>
     <h1>SOUVINEAR</h1>
     <?php echo $_SESSION['user']; ?>
@@ -77,5 +83,6 @@
     </form>
     
     <script src="recordAdd.js"></script>
+    <script src="js/js-nav.js"></script>
 </body>
 </html>

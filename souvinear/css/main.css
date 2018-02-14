@@ -1233,14 +1233,18 @@ svg {
   display: block;
   margin: auto; }
 
-button {
-  border-radius: 25px;
-  background-color: #2DD5CC;
-  font-size: 1rem;
-  font-weight: 500;
-  min-width: 140px;
-  box-shadow: 0px 3px 0px #23B8BB;
-  border: #155658; }
+.profile_button, .button-modal {
+  padding: 15px;
+}
+
+button .add{
+width: 200px;
+}  
+
+.profile_delete{
+  color: #aaa;
+  padding: 20px;
+}
 
 .bn-align {
   padding: 15px;

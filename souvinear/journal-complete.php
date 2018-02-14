@@ -1,5 +1,8 @@
+<!-- THIS IS THE INDIVIDUAL JOURNAL ENTRY PAGE, FILLED OUT -->
+
 <?php require_once 'includes/initialize.php'; ?>
 <?php require_once 'includes/session.php'; ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -24,6 +27,7 @@
   	<!-- Add2Home Styling -->
   	<link rel="stylesheet" href="css/css-add2home.css">
   	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/css-nav.css">
 
   	<!-- ICONS -->
   	<!-- iPad retina icon -->
@@ -51,11 +55,14 @@
   	</style>
 
   </head>
+
+  <?php 
+include 'nav.php';
+?>
+
   <body>
 
-<!-- paste kams nav here -->
-
-<div class="entry_wrap">
+<div class="entry_wrap port_wrap">
   <div class="info_wrap">
     <h1 class="headliner">Headliner</h1>
     <h2 class="opener">Supporting</h2>
@@ -182,5 +189,7 @@ performance. Unforgettable.</p>
   <p>edit this entry</p>
 </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/js-nav.js"></script>
   </body>
 </html>
