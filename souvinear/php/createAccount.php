@@ -63,9 +63,9 @@
 					<svg xmlns="http://www.w3.org/2000/svg" width="174.61" height="89.4" viewBox="-35 -20 300 89.4">
 					  <g class="ticket_11" id="Ticket_11">
 					    <path class="cls-one" d="M1015,890.74v19.42s16.15,6,16.15,26.34S1015,961.87,1015,961.87v18.26h127.46v-89.4Z" transform="translate(-1015 -890.74)"/>
-					    <rect class="cls-two" x="115.66" y="5.99" width="4" height="17.99" rx="2" ry="2"/>
-					    <rect class="cls-two" x="115.66" y="33.5" width="4" height="17.99" rx="2" ry="2"/>
-					    <rect class="cls-two" x="115.66" y="61.01" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="115.66" y="8.99" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="115.66" y="36.5" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="115.66" y="64.01" width="4" height="17.99" rx="2" ry="2"/>
 
 					  </g>
 					  <g class="ticket_22" id="Ticket_22">

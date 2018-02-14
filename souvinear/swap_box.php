@@ -1,4 +1,6 @@
+
 <?php require_once 'includes/initialize.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,9 +24,11 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- Add2Home Styling -->
 	<link rel="stylesheet" href="css/css-add2home.css">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/css-hotspots.css">
     <link rel="stylesheet" href="css/css-nav.css">
+
 
 	<!-- ICONS -->
 	<!-- iPad retina icon -->
@@ -132,10 +136,6 @@ include 'nav.php';
 
 
 
-			<!-- <div class="nav">
-				<img src="graphics/nav.png" alt="Nav">
-			</div> -->
-
 
 
 			<div class="pinned_container">
@@ -220,10 +220,12 @@ include 'nav.php';
 				<div class="song_info">
 					<div class="song_flex">
 						<h6>John Legend</h6>
-						<h6>Al of Me</h6>
+
+						<h6>All of Me</h6>
 					</div>
 					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
 					<button class="add">add</button>
+
 				</div>
 				
 				<div class="see_flex">
@@ -255,11 +257,14 @@ include 'nav.php';
 	      touchIcon: true
 	    }
 	</script>
+
     <script src="js/js-add2home.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/modal.js"></script>
     <script src="js/main.js"></script>
     <script src="js/js-nav.js"></script>
+
+
 </body>
 
 </html>

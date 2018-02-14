@@ -1,4 +1,3 @@
-
 <?php require_once 'includes/initialize.php'; ?>
 
 <!DOCTYPE html>
@@ -59,17 +58,38 @@
 		<!-- Portrait View Start -->
 		<div class="port_wrap">
 
-				<div class="spotify_wrap">
-					 <img class="spotify_logo" src="graphics/spotify.svg" alt="Spotify Icon">
-					 <h3>connect to Spotify</h3>
+				<div class="pass_reset_wrap">
+					 <h3>reset password</h3>
 				</div>
 
-				<div class="container">
-				    <div class="login-container hidden" id="js-login-container">
-				      <button class="btn btn--login" id="js-btn-login">connect</button>
+
+				<div class="form_pass_reset_wrap">
+
+				    <div class="form-group_pass">
+				      <img class="email_move_down" src="graphics/email.svg" alt="Lock Icon">
+				      <input type="password" name="password" id="password" placeholder="Enter email address">
 				    </div>
-				    <div class="main-container hidden" id="js-main-container"></div>
+
+				    <div class="form-group_pass">
+				      <img src="graphics/lock_white.svg" alt="Lock Icon">
+				      <input type="password" name="password" id="password" placeholder="Enter old password">
+				    </div>
+
+	                 <div class="form-group_pass">
+				      <img src="graphics/lock_white.svg" alt="Lock Icon">
+				      <input type="password" name="password-confirm" id="password-confirm" placeholder="Enter new password">
+				    </div>
+
+				    <div class="form-group_pass">
+				      <img src="graphics/lock_white.svg" alt="Lock Icon">
+				      <input type="password" name="password-confirm" id="password-confirm" placeholder="Enter new password">
+				    </div>
+				 </div>
+
+				<div class="flex_confirm_btn">
+					<button class="btn btn--login" id="js-btn-login">confirm</button>
 				</div>
+
 
 				<div class="bottom_bar_cancel_wrap" onclick="jmp2LocalPage('')">
 					<svg class="bottom_cancel" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 375 97.88">
