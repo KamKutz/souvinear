@@ -9,11 +9,11 @@
 	],
 "creatorBuild": "26261",
 "files": {
-	"\/add_concert.html": {
+	"\/account_setting.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/add_concert.html",
+		"oA": 0,
+		"oAP": "\/account_setting.php",
 		"oF": 0
 		},
 	"\/add_concert.php": {
@@ -21,20 +21,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/add_concert.php",
-		"oF": 0
-		},
-	"\/bloobdoop\/sloanisa_souvinear.sql": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bloobdoop\/sloanisa_souvinear.sql",
-		"oF": 0
-		},
-	"\/createAccount.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/createAccount.php",
 		"oF": 0
 		},
 	"\/css\/css-add2home.css": {
@@ -88,13 +74,6 @@
 		"oAP": "\/error_log",
 		"oF": 0
 		},
-	"\/fb_log-in.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fb_log-in.html",
-		"oF": 0
-		},
 	"\/graphics\/add-button.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -125,6 +104,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/graphics\/anthony.jpg": {
+		"ft": 16384,
+		"iS": 63363,
+		"oA": 0,
+		"oAP": "\/graphics\/anthony.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/graphics\/arrow.svg": {
@@ -182,6 +171,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/graphics\/editentry.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/graphics\/email.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/graphics\/email.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -331,6 +330,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/graphics\/lock_white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/graphics\/magnify.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/graphics\/magnify.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -582,6 +591,36 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/graphics\/spotify.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/graphics\/spotify.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/graphics\/spotify_purple.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/graphics\/spotify_purple.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/graphics\/swap_arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/graphics\/swap_arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/graphics\/test-photo.png": {
 		"ft": 32768,
 		"iS": 380426,
@@ -638,20 +677,6 @@
 		"oAP": "\/includes\/session_start.php",
 		"oF": 0
 		},
-	"\/index-anisa.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index-anisa.php",
-		"oF": 0
-		},
-	"\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
-		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -659,25 +684,25 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/journal-complete.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/journal-complete.html",
-		"oF": 0
-		},
 	"\/journal-complete.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/journal-complete.php",
 		"oF": 0
 		},
-	"\/journal-cover.html": {
+	"\/journal-completeV2.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/journal-cover.html",
+		"oA": 0,
+		"oAP": "\/journal-completeV2.php",
+		"oF": 0
+		},
+	"\/journal-cover.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/journal-cover.php",
 		"oF": 0
 		},
 	"\/js\/jquery-3.2.1.min.js": {
@@ -740,10 +765,50 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/modal.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/modal-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/spot_modal-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/spot_modal-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/spot_modal.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/js\/spot_modal-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/spotify.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/spotify-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/login.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/login.php",
 		"oF": 0
 		},
@@ -764,18 +829,11 @@
 		"oAP": "\/main.php",
 		"oF": 0
 		},
-	"\/navigation.html": {
+	"\/pass_reset.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/navigation.html",
-		"oF": 0
-		},
-	"\/navigation.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/navigation.php",
+		"oA": 0,
+		"oAP": "\/pass_reset.php",
 		"oF": 0
 		},
 	"\/php\/concert_processing.php": {
@@ -795,7 +853,7 @@
 	"\/php\/createAccount.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/php\/createAccount.php",
 		"oF": 0
 		},
@@ -841,7 +899,25 @@
 		"oAP": "\/php\/session.php",
 		"oF": 0
 		},
-	"\/scss\/_log-in-fb.scss": {
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/scss\/_account-settings.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -849,7 +925,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/_log-in-fb.css",
+		"oAP": "\/scss\/_account-settings.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_create-account.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_create-account.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -880,6 +969,58 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/_pass_reset.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_pass_reset.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_spot_pin_modal.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_spot_pin_modal.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_spotify-log-in.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_spotify-log-in.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_spotify_pin.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_spotify_pin.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/_svg-styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -893,6 +1034,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/_swap-box.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_swap-box.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/main.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -901,16 +1055,37 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/scss\/main.css",
-		"oF": 0,
+		"oAP": "\/css\/main.css",
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/spotify_link.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/spotify_link.php",
+		"oF": 0
+		},
+	"\/spotify_pin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/spotify_pin.php",
+		"oF": 0
 		},
 	"\/sql\/sloanisa_souvinear.sql": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/sql\/sloanisa_souvinear.sql",
+		"oF": 0
+		},
+	"\/swap_box.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/swap_box.php",
 		"oF": 0
 		},
 	"\/wrong.php": {
@@ -1343,7 +1518,7 @@
 			},
 		"array-callback-return": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'allowImplicit': false}"
 			},
 		"array-element-newline": {
 			"active": 0,
@@ -1507,7 +1682,7 @@
 			},
 		"indent": {
 			"active": 0,
-			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1, }"
+			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1 }"
 			},
 		"init-declarations": {
 			"active": 0,
@@ -2804,7 +2979,7 @@
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
-		"autoOutputAction": 2,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.*",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -2909,7 +3084,7 @@
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"uglifyDefinesString": "",

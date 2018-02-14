@@ -30,7 +30,7 @@ a {
 .form-group_1 {
   position: relative;
   margin: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
   label {
     position: absolute;
     font-family: 'Muli', sans-serif;
@@ -66,6 +66,43 @@ a {
 }
 
 .form-group_2 {
+  position: relative;
+  margin-bottom: 0.8rem;
+  label {
+    position: absolute;
+    font-family: 'Muli', sans-serif;
+    margin-top: -1.3rem;
+  }
+  img {
+    position: absolute;
+    width: 10%;
+    margin-top: 0.35rem;
+    margin-left: 10.3rem;
+  }
+  input {
+    background-color: #afb0be;
+    outline: none;
+    transition: background-color 350ms ease 0s, border 350ms ease 0s;
+    color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: solid 2px #AFB0BE;
+    width: 13rem;
+    height: 2rem;
+  }
+  input::placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem;
+  }
+  input:focus {
+    background-color: #f8669f;
+    color: white;
+    border: solid 2px #f8669f;
+  }
+}
+
+.form-group_3 {
   position: relative;
   margin: 0;
   label {
@@ -109,6 +146,7 @@ a {
     margin-top: 3rem;
     width: 100%;
     .log-in {
+      padding: 0;
       border-radius: 50px;
       width: 12rem;
       border: none;
@@ -123,27 +161,33 @@ a {
         font-style: italic;
         color: #371443;
        }
-    .log-in:active {
+  }
+}
+
+.log-in:active {
       border-radius: 50px;
       width: 12rem;
       border: none;
       background-image: linear-gradient(bottom, rgb(34, 170, 164) 0%, rgb(34, 170, 164) 100%);
       text-shadow: 0px -1px 0px rgba(0,0,0,.5);
       box-shadow: 0px 4px 0px #248d8f, 0px 4px 0px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-    }
-  }
 }
 
 .no_account_wrap {
   display: flex;
   justify-content: flex-start;
+  z-index: 100;
   h4 {
+    width: 100%;
+    position: fixed;
+    bottom: 1.9rem;
+    color: white;
+    z-index: 100;
+
     font-family: 'Muli', sans-serif;
     font-style: italic;
     font-size: 0.9em;
-    margin: 0;
-    padding-left: 0.5rem;
-    padding-top: 2.3rem;
+    padding-left: 0.8rem;
   }
 }
 
@@ -154,9 +198,9 @@ a {
   z-index: 0;
   .bottom_signup {
     width: 100%;
-    position: absolute;
-    bottom: -1rem;
-    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
   }
   h3 {
     position: absolute;
@@ -320,33 +364,19 @@ a {
 }
 
 .no_account_wrap {
-  display: flex;
-  justify-content: flex-start;
   h4 {
-    font-family: 'Muli', sans-serif;
-    margin: 0;
-    padding-top: 4.4rem;
+    bottom: 2.2rem;
+    font-size: 1.1em;
+    padding-left: 0.8rem;
   }
 }
 
 .bottom_bar_wrap {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  .bottom_signup {
-    width: 100%;
-    position: absolute;
-    bottom: -0.5rem;
-    z-index: -1;
-  }
   h3 {
-    position: absolute;
-    color: white;
-    bottom: -0.5rem;
-    font-family: 'Averia Sans Libre', cursive;
-    font-size: 1.75em;
+    font-size: 2em;
   }
 }
+
 
 }
 
@@ -440,34 +470,20 @@ a {
     }
   }
 
-.no_account_wrap {
-  display: flex;
-  justify-content: flex-start;
-  h4 {
-    font-family: 'Muli', sans-serif;
-    margin: 0;
-    padding-top: 3.3rem;
+  .no_account_wrap {
+    h4 {
+      bottom: 2.3rem;
+      font-size: 1.1em;
+      padding-left: 0.8rem;
+    }
+  }
+
+.bottom_bar_wrap {
+  h3 {
+    font-size: 2.5em;
   }
 }
 
-.bottom_bar_wrap {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  .bottom_signup {
-    width: 100%;
-    position: absolute;
-    bottom: -0.5rem;
-    z-index: -1;
-  }
-  h3 {
-    position: absolute;
-    color: white;
-    bottom: -0.5rem;
-    font-family: 'Averia Sans Libre', cursive;
-    font-size: 1.75em;
-  }
-}
 
 }
 

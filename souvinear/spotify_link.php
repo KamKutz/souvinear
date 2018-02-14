@@ -58,55 +58,20 @@
 		<!-- Portrait View Start -->
 		<div class="port_wrap">
 
-				<div class="intro_wrap">
-					<h3>souvinear</h3>
-					<svg xmlns="http://www.w3.org/2000/svg" width="174.61" height="89.4" viewBox="-35 -20 300 89.4">
-					  <g class="ticket_11" id="Ticket_11">
-					    <path class="cls-one" d="M1015,890.74v19.42s16.15,6,16.15,26.34S1015,961.87,1015,961.87v18.26h127.46v-89.4Z" transform="translate(-1015 -890.74)"/>
-					    <rect class="cls-two" x="115.66" y="8.99" width="4" height="17.99" rx="2" ry="2"/>
-					    <rect class="cls-two" x="115.66" y="36.5" width="4" height="17.99" rx="2" ry="2"/>
-					    <rect class="cls-two" x="115.66" y="64.01" width="4" height="17.99" rx="2" ry="2"/>
-
-					  </g>
-					  <g class="ticket_22" id="Ticket_22">
-					    <path class="cls-one" d="M1148.6,890.74v89.4h61V961.36s-15.38-8.52-15.38-25.92,15.38-25.35,15.38-25.35V890.74Z" transform="translate(-1015 -890.74)"/>
-					     <rect class="cls-two bar_scan" x="0" y="0" width="10" height="90" rx="2" ry="2"/>
-					  </g>
-					</svg>
+				<div class="spotify_wrap">
+					 <img class="spotify_logo" src="graphics/spotify.svg" alt="Spotify Icon">
+					 <h3>connect to Spotify</h3>
 				</div>
 
-				<form class="form-wrap" action="php/login_processing.php" method="post">
-				    <div class="form-group_1">
-<!--				      <label for="username">Username</label>-->
-				      <img src="graphics/user_white.svg" alt="User Icon">
-				      <input type="text" name="username" id="username" placeholder="Username" onfocus="this.placeholder = ''">
+				<div class="container">
+				    <div class="login-container hidden" id="js-login-container">
+				      <button class="btn btn--login" id="js-btn-login">connect</button>
 				    </div>
+				    <div class="main-container hidden" id="js-main-container"></div>
+				</div>
 
-				    <div class="form-group_2">
-<!--				      <label for="password">Password</label>-->
-				      <img src="graphics/lock_white.svg" alt="Lock Icon">
-				      <input type="password" name="password" id="password" placeholder="Password" onfocus="this.placeholder = ''">
-				    </div>
-
-					<div class="log-in_wrap" onclick="jmp2LocalPage('')">
-						<button type="submit" name="submit" class="log-in">
-							<h4>login</h4>
-						</button>
-					</div>
-				</form>
-
-
-
-
-<a href="php/createAccount.php" class="account_link">
-
-						<div class="no_account_wrap">
-							<h4>no account?</h4>
-						</div>
-
-
-				<div class="bottom_bar_wrap" onclick="jmp2LocalPage('')">
-					<svg class="bottom_signup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 97.88">
+				<div class="bottom_bar_cancel_wrap" onclick="jmp2LocalPage('')">
+					<svg class="bottom_cancel" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 375 97.88">
 					    <linearGradient id="linear-gradient" x1="-451.01" y1="556.78" x2="-449.83" y2="556.78" gradientTransform="matrix(375, 0, 0, -97.88, 169048, 54545.9)" gradientUnits="userSpaceOnUse">
 					      <stop offset="0" stop-color="#2dd5cc"/>
 					      <stop offset="1" stop-color="#fe5893"/>
@@ -122,9 +87,8 @@
 					      <path id="Path_337" data-name="Path 337" class="cls-2" d="M0,.49l0,50s20.24,5.27,70,0,61.19-12.37,130-27.06c34-7.86,71.62-18.79,118.46-17s56.43,10.27,56.43,10.27V5.89S334.53.51,301,.35c-15.23-.07-58.25-1.5-144,9.4a678,678,0,0,1-91.71,1.08C29.09,6.76,0,.49,0,.49Z" transform="translate(0 -0.22)"/>
 					   </g>
 					</svg>
-					<h3>Sign Up</h3>
+					<h3>Cancel</h3>
 				</div>
-				</a>
 
 		</div>
 
@@ -141,6 +105,8 @@
 
 	<!-- JAVASCRIPT-->
 	<!-- JS to change config variables -->
+	<script src="https://spotify-player.herokuapp.com/spotify-player.js"></script>
+	<script src="js/spotify.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript">
 	    // Customize config variable BEFORE loading addToHome.js file this is how to change the parameters

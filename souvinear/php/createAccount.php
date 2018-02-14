@@ -63,35 +63,32 @@
 					<svg xmlns="http://www.w3.org/2000/svg" width="174.61" height="89.4" viewBox="-35 -20 300 89.4">
 					  <g class="ticket_11" id="Ticket_11">
 					    <path class="cls-one" d="M1015,890.74v19.42s16.15,6,16.15,26.34S1015,961.87,1015,961.87v18.26h127.46v-89.4Z" transform="translate(-1015 -890.74)"/>
-					    <rect class="cls-two" x="115.66" y="5.99" width="4" height="17.99" rx="2" ry="2"/>
-					    <rect class="cls-two" x="115.66" y="33.5" width="4" height="17.99" rx="2" ry="2"/>
-					    <rect class="cls-two" x="115.66" y="61.01" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="115.66" y="8.99" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="115.66" y="36.5" width="4" height="17.99" rx="2" ry="2"/>
+					    <rect class="cls-two" x="115.66" y="64.01" width="4" height="17.99" rx="2" ry="2"/>
 
 					  </g>
 					  <g class="ticket_22" id="Ticket_22">
 					    <path class="cls-one" d="M1148.6,890.74v89.4h61V961.36s-15.38-8.52-15.38-25.92,15.38-25.35,15.38-25.35V890.74Z" transform="translate(-1015 -890.74)"/>
-					    <rect class="cls-two" x="139.8" y="8.19" width="4" height="17.99" rx="2" ry="2"/>
-					    <rect class="cls-two" x="139.8" y="35.71" width="4" height="17.99" rx="2" ry="2"/>
-					    <rect class="cls-two" x="139.8" y="63.22" width="4" height="17.99" rx="2" ry="2"/>
 					     <rect class="cls-two bar_scan" x="0" y="0" width="10" height="90" rx="2" ry="2"/>
 					  </g>
 					</svg>
 				</div>
 
 					<form class="form-wrap" action="create_processing.php" method="post">
-				    <div class="form-group_1">
+				    <div class="form-group_1_ac">
 <!--				      <label for="username">Choose a username</label>-->
-				      <img src="../graphics/user.svg" alt="User Icon">
+				      <img src="../graphics/user_white.svg" alt="User Icon">
 				      <input type="text" name="username" id="username" value="Username">
 				    </div>
-				    <div class="form-group_2">
+				    <div class="form-group_2_ac">
 <!--				      <label for="password">Choose a password</label>-->
-				      <img src="../graphics/lock.svg" alt="Lock Icon">
+				      <img src="../graphics/lock_white.svg" alt="Lock Icon">
 				      <input type="password" name="password" id="password" placeholder="Password">
 				    </div>
-                        <div class="form-group_3">
+                     <div class="form-group_3_ac">
 <!--				      <label for="password-confirm">Confirm a password</label>-->
-				      <img src="../graphics/lock.svg" alt="Lock Icon">
+				      <img src="../graphics/lock_white.svg" alt="Lock Icon">
 				      <input type="password" name="password-confirm" id="password-confirm" placeholder="Confirm a password">
 				    </div>
 						<div class="log-in_wrap" onclick="jmp2LocalPage('')">
@@ -106,7 +103,7 @@
 
 <a href="../login.php">
 
-						<div class="no_account_wrap">
+						<div class="no_account_wrap_ac">
 							<h4>have an account?</h4>
 						</div>
 
@@ -116,18 +113,22 @@
 
 
 				<div class="bottom_bar_wrap" onclick="jmp2LocalPage('')">
-					<svg class="bottom_signup" xmlns="http://www.w3.org/2000/svg" width="375" height="104.2" viewBox="0 0 375 104.2">
-					    <linearGradient id="linear-gradient" y1="586.97" x2="375" y2="586.97" gradientUnits="userSpaceOnUse">
-					      <stop offset="0" stop-color="#a2d7d1"/>
-					      <stop offset="1" stop-color="#f7b4de"/>
-					    </linearGradient>
-					    <linearGradient id="linear-gradient-2" y1="621.85" x2="375" y2="621.85" gradientUnits="userSpaceOnUse">
-					      <stop offset="0" stop-color="#34d1ca"/>
-					      <stop offset="1" stop-color="#fe5893"/>
-					    </linearGradient>
-					  <path class="cls-1_one" d="M0,568.43S22.64,583,115,583,201.91,562.44,302,562.44c63.55,0,73,12.74,73,12.74v36.31H0Z" transform="translate(0 -562.44)"/>
-					  <path class="cls-2_two" d="M375,584.9s-16.62-7.85-86-7.85S176.37,599.63,70.67,599.63C10,599.63,0,584.36,0,584.36v82.28H375Z" transform="translate(0 -552.44)"/>
-					</svg>
+					<svg class="bottom_signup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 97.88">
+						    <linearGradient id="linear-gradient" x1="-451.01" y1="556.78" x2="-449.83" y2="556.78" gradientTransform="matrix(375, 0, 0, -97.88, 169048, 54545.9)" gradientUnits="userSpaceOnUse">
+						      <stop offset="0" stop-color="#2dd5cc"/>
+						      <stop offset="1" stop-color="#fe5893"/>
+						    </linearGradient>
+						    <linearGradient id="linear-gradient-2" y1="26.55" x2="374.86" y2="26.55" gradientUnits="userSpaceOnUse">
+						      <stop offset="0" stop-color="#92e6e5"/>
+						      <stop offset="1" stop-color="#f8a9ca"/>
+						    </linearGradient>
+						    <g id="BOTTOMbutton">
+						      <g id="Group">
+						        <path id="Path-3-Copy-2" class="cls-1" d="M0,.51C62.85,12.84,74.79,13.29,143.12,10.89,218.71,4.17,277.58-6.48,375,6V98L0,98.1Z" transform="translate(0 -0.22)"/>
+						      </g>
+						      <path id="Path_337" data-name="Path 337" class="cls-2" d="M0,.49l0,50s20.24,5.27,70,0,61.19-12.37,130-27.06c34-7.86,71.62-18.79,118.46-17s56.43,10.27,56.43,10.27V5.89S334.53.51,301,.35c-15.23-.07-58.25-1.5-144,9.4a678,678,0,0,1-91.71,1.08C29.09,6.76,0,.49,0,.49Z" transform="translate(0 -0.22)"/>
+						   </g>
+						</svg>
 					<h3>Log In</h3>
 				</div>
 				</a>

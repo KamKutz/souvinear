@@ -1,0 +1,186 @@
+.spotify_pin_wrap {
+	width: 100%;
+	background-color: #ededf7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	h3 {
+		font-family: 'Averia Sans Libre', cursive;
+		color: #371443;
+		font-size: 1.5em;
+		font-weight: 100;
+		margin: 0.5rem 0 0.9rem 0;
+	}
+	img {
+		width: 55px;
+		height: 55px;
+		margin-top: 1rem;
+		margin-bottom: 0.1rem;
+	}
+}
+
+.spotify_pin_intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	h3 {
+		font-family: 'Averia Sans Libre', cursive;
+		font-size: 1.5em;
+		font-weight: 100;
+		margin: 0.5rem 0 1rem 0;
+	}
+	h4 {
+		font-family: 'Muli', sans-serif;
+		padding: 0 2.5rem 0 2.5rem;
+		margin: 0 0 2rem 0;
+		font-weight: 100;
+		text-align: center;
+	}
+}
+
+
+.spotify_search_bar {
+  position: relative;
+  margin: 0;
+  margin-bottom: 1.2rem;
+  label {
+    position: absolute;
+    font-family: 'Muli', sans-serif;
+    margin-top: -1.3rem;
+  }
+  img {
+    position: absolute;
+    width: 13%;
+    margin-top: -0.2rem;
+    margin-left: 10rem;
+  }
+  input {
+    background-color: #afb0be;
+    outline: none;
+    transition: background-color 350ms ease 0s;
+    color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: solid 2px #AFB0BE;
+    width: 13rem;
+    height: 2rem;
+  }
+  input::placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem;
+  }
+  input:focus {
+    background-color: #f8669f;
+    color: white;
+    border: solid 2px #f8669f;
+  }
+}
+
+.flex_connect {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 0 0 0.75rem 0;
+		.connect_user {
+		font-family: 'Muli', sans-serif;
+		font-size: 1em;
+		font-weight: 100;
+		margin: 0.2rem 0 1.2rem 0;
+	}
+}
+
+
+
+
+
+
+.playlist_suggestions_wrap {
+	margin-bottom: 1.2rem;
+	.suggestions_flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		h2 {
+			color: #371443;
+			font-family: 'Averia Sans Libre', cursive;
+			font-size: 1.15em;
+			font-weight: 100;
+			margin-bottom: 0.6rem;
+		}
+	}
+	h5 {
+		font-family: 'Muli', sans-serif;
+		font-size: 0.8em;
+		padding-left: 1rem;
+		margin-top: 0;
+		margin-bottom: 0.2rem;
+		color: #371443;
+	}
+	.song_info {
+		position: relative;
+		.song_flex {
+			width: 100%;
+			height: 70px;
+
+			background-color: #e2e2eb;
+			margin-bottom: 2px;
+			padding-left: 6rem;
+
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+
+			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 5px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.75em;
+			}
+		}
+		.temp {
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			margin-top: -4.5rem;
+			left: 0;
+		}
+		.add {
+			width: 35px;
+			position: absolute;
+			margin-top: -2.7rem;
+			right: 2rem;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
