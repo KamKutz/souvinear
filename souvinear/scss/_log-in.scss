@@ -146,6 +146,7 @@ a {
     margin-top: 3rem;
     width: 100%;
     .log-in {
+      padding: 0;
       border-radius: 50px;
       width: 12rem;
       border: none;
@@ -175,11 +176,13 @@ a {
 .no_account_wrap {
   display: flex;
   justify-content: flex-start;
+  z-index: 100;
   h4 {
     width: 100%;
     position: fixed;
     bottom: 1.9rem;
     color: white;
+    z-index: 100;
 
     font-family: 'Muli', sans-serif;
     font-style: italic;
@@ -197,7 +200,7 @@ a {
     width: 100%;
     position: fixed;
     bottom: 0;
-    z-index: -1;
+    z-index: 0;
   }
   h3 {
     position: absolute;

@@ -1,6 +1,9 @@
 <!-- THIS IS THE INDIVIDUAL JOURNAL ENTRY PAGE, FILLED OUT -->
 
 <?php require_once 'includes/initialize.php'; ?>
+<?php require_once 'includes/session.php'; ?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -58,7 +61,6 @@ include 'nav.php';
 ?>
 
   <body>
-
 
 <div class="entry_wrap port_wrap">
   <div class="info_wrap">

@@ -1,5 +1,3 @@
-
-<!-- THIS IS THE JOURNAL PAGE -->
 <?php require_once 'includes/initialize.php'; ?>
 
 <!DOCTYPE html>
@@ -7,7 +5,7 @@
 
 <head>
 	<!-- What it tries to add as homepage app name -->
-	<title>Journal Display Page</title>
+	<title>Spotify Pin Page</title>
 	<!-- META -->
 	<meta charset="utf-8">
 	<!-- Enabling our application to be able to work mobiley -->
@@ -26,8 +24,6 @@
 	<!-- Add2Home Styling -->
 	<link rel="stylesheet" href="css/css-add2home.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/css-nav.css">
-
 
 	<!-- ICONS -->
 	<!-- iPad retina icon -->
@@ -56,66 +52,87 @@
 
 </head>
 
-<?php 
-include 'nav.php';
-?>
-
 <body>
 	<!-- PAGE CONTENT -->
 
 		<!-- Portrait View Start -->
 		<div class="port_wrap">
 
+			<div class="nav">
+				<img src="graphics/nav.png" alt="Nav">
+			</div>
+
+
+			<div class="spotify_pin_intro">
+				<h3>choose a song to pin!</h3>
+				<h4>Pinned songs will appear at hotspots for other users to collect.  Make it a good one!</h4>
+			</div>
+
+
+			<div class="overlay"></div>
+			<div class="modal">
+				<div class="warning_flex">
+				  	<div class="warning_mess">
+				  		<p>You chose "All of Me" as your pinned song.  Is this correct?</p>
+				  	</div>
+			  	</div>
+			  	<div class="btn_spot_modal_wrap">
+				  	<button class="btn_correct">correct</button>
+				  	<button class="btn_incorrect">incorrect</button>
+			  	</div>
+			  </div>
+			</div>
+
+			
+
 			<div class="upcoming">
-				<h2>Upcoming Events</h2>
-				<div class="upcoming_events">
-					<h4>You don't have any upcoming events!</h4>
-					<img src="graphics/icon_venue.svg" alt="Venue Icon">
+					<div class="spotify_pin_wrap">
+						<img src="graphics/spotify_purple.svg" alt="Spotify Purple Icon">
+						<h3>Search Spotify:</h3>
+						<div class="spotify_search_bar">
+					      <img src="graphics/magnify.svg" alt="Search Icon">
+					      <input type="text" name="spot_search" id="spot_search"  onfocus="this.placeholder = ''">
+				   	 	</div>
+					</div>
+					<div class="flex_connect">
+						<h3 class="connect_user">connected to: ant_green04 - edit</h3>
+					</div>
+			</div>
+			
+
+			<div class="playlist_suggestions_wrap">
+				<div class="suggestions_flex">
+					<h2>suggestions from your playlist!</h2>
 				</div>
-			</div>
-
-			<div class="plus_button">
-				<img src="graphics/plus_button.png" alt="Plus Button">
-			</div>
-
-			<div class="my_journal">
-				<h2>My Entries</h2>
-				<div>
-					<div class="flex">
+				<div class="song_info">
+					<div class="song_flex">
 						<h6>John Legend</h6>
-						<h6>August 4th, 2017</h6>
-						<h6>BB&T Pavilion</h6>
+						<h6>All of Me</h6>
 					</div>
-					<img class="legend" src="graphics/legend.jpeg" alt="John Legend">
+					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
+					<h5 class="add modal_open">pin</h5>
 				</div>
 
-				<div>
-					<div class="flex">
-						<h6>Leela James</h6>
-						<h6>June 29th, 2017</h6>
-						<h6>Theatre of the Living Arts</h6>
+				<div class="song_info">
+					<div class="song_flex">
+						<h6>John Legend</h6>
+						<h6>All of Me</h6>
 					</div>
-					<img class="legend" src="graphics/james.png" alt="Leela James">
+					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
+					<h5 class="add">pin</h5>
 				</div>
 
-				<div>
-					<div class="flex">
-						<h6>Jazz Festival</h6>
-						<h6>April 17th, 2016</h6>
-						<h6>Center City</h6>
+				<div class="song_info">
+					<div class="song_flex">
+						<h6>John Legend</h6>
+						<h6>All of Me</h6>
 					</div>
-					<img class="legend" src="graphics/legend.jpeg" alt="John Legend">
-				</div>
-
-				<div>
-					<div class="flex">
-						<h6>Mac Miller</h6>
-						<h6>December 12th, 2016 </h6>
-						<h6>Sovereign Center</h6>
-					</div>
-					<img class="legend" src="graphics/legend.jpeg" alt="John Legend">
+					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
+					<h5 class="add">pin</h5>
 				</div>
 			</div>
+
+
 		</div>
 		<!-- Portrait View End  -->
 
@@ -131,6 +148,7 @@ include 'nav.php';
 	<!-- JAVASCRIPT-->
 	<!-- JS to change config variables -->
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/spot_modal.js"></script>
 	<script type="text/javascript">
 	    // Customize config variable BEFORE loading addToHome.js file this is how to change the parameters 
 	    var addToHomeConfig = {
@@ -138,9 +156,8 @@ include 'nav.php';
 	    }
 	</script>
 	<script src="js/js-add2home.js"></script>
+	<script src="js/modal.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/js-nav.js"></script>
-
 </body>
 
 </html>

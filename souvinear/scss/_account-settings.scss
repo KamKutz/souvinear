@@ -9,9 +9,10 @@
 .user_info {
 	margin-top: 1rem;
 	h4 {
-		font-size: 1em;
+		font-size: 1.3em;
 		color: #371443;
 		font-family: 'Averia Sans Libre', cursive;
+		font-weight: 100;
 		margin: 0;
 		padding-bottom: 0.25rem;
 	}
@@ -40,7 +41,8 @@
 	h2 {
 		color: #371443;
 		font-family: 'Averia Sans Libre', cursive;
-		font-size: 1em;
+		font-weight: 100;
+		font-size: 1.2em;
 		margin-top: 2rem;
 		margin-bottom: 0;
 	}
@@ -99,17 +101,62 @@
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	margin-top: 1.75rem;
+	margin-top: 1.25rem;
 }
 
-.profile_button {
+.profile_spot_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #371443;
 	margin-top: 1.15rem;
+    padding: 10px 10px 10px 10px;
+    border-radius: 25px;
+    background-color: #2DD5CC;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 140px;
+    box-shadow: 0px 3px 0px #23B8BB;
+    border: #155658;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1em;
+    font-style: italic;
+    img {
+    	width: 45px;
+    	height: 45px;
+		margin: 0.3rem 0.8rem 0.3rem 0.8rem;
+    }
 }
 
+.profile_reset_button {
+	margin-top: 1.15rem;
+    padding: 10px 10px 10px 10px;
+    border-radius: 25px;
+    background-color: #2DD5CC;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 140px;
+    box-shadow: 0px 3px 0px #23B8BB;
+    border: #155658;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #371443;
+}
 
+.delete_account_btn {
+	margin-top: 1.5rem;
+	background-color: rgba(255,255,255,0);
+	box-shadow: none;
+	border: none;
+	padding-bottom: 1.5rem;
 
-
-
+	font-family: 'Muli', sans-serif;
+	font-size: 0.8em;
+	font-style: italic;
+	font-weight: 100;
+}
 
 
 
