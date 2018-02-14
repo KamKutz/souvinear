@@ -113,7 +113,7 @@ include 'nav.php';
 			can accept or decline yours!  
 			</p>
 			        <div class="bn-align">
-			        <button type="button" id="my2Btn">got it!</button></div>
+			        <button class="button-modal" type="button" id="my2Btn">got it!</button></div>
 			      </div> 
 			    </div> 
 			 
@@ -220,10 +220,10 @@ include 'nav.php';
 				<div class="song_info">
 					<div class="song_flex">
 						<h6>John Legend</h6>
-						<h6>All of Me</h6>
+						<h6>Al of Me</h6>
 					</div>
 					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
-					<h5 class="add">add</h5>
+					<button class="add">add</button>
 				</div>
 				
 				<div class="see_flex">

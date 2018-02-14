@@ -1,3 +1,5 @@
+<!-- THIS IS THE INDIVIDUAL JOURNAL ENTRY PAGE, FILLED OUT -->
+
 <?php require_once 'includes/initialize.php'; ?>
 <!DOCTYPE html>
 <html>
@@ -57,7 +59,6 @@ include 'nav.php';
 
   <body>
 
-<!-- paste kams nav here -->
 
 <div class="entry_wrap port_wrap">
   <div class="info_wrap">

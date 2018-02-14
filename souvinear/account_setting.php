@@ -85,7 +85,7 @@ include 'nav.php';
 				<button class="profile_button">connect to spotify</button>
 				<button class="profile_button">reset password</button>
 				<button class="profile_button">log out</button>
-				<a class="profile_button" href="">Delete Account</a>
+				<a class="profile_delete" href="">Delete Account</a>
 			</div>
 					
 			</div>

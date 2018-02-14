@@ -191,7 +191,7 @@ svg{
     margin: auto;
 }
 
-button{
+/* .button-modal{
   padding: 15px;
   border-radius: 25px;
   background-color: #2DD5CC;
@@ -201,7 +201,7 @@ button{
   box-shadow: 0px 3px 0px #23B8BB;
   border: #155658;
     
-}
+} */
 
 .bn-align{
   padding: 15px;

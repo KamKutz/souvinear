@@ -127,7 +127,7 @@ include 'nav.php';
     </g>
 </svg>
 			  <div class="bn-align">
-			  <button type="button" id="my2Btn">got it!</button></div>
+			  <button class="button-modal" type="button" id="my2Btn">got it!</button></div>
 			</div> 
 		  </div> 
 	   

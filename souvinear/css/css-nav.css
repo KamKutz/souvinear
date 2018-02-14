@@ -7,7 +7,8 @@
 #nav{
     transition: all 1s;
     z-index: 100;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     font-family: 'Averia Sans Libre', cursive;
 }
 
