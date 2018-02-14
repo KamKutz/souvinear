@@ -48,7 +48,7 @@ a {
 .form-group_1 {
   position: relative;
   margin: 0;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 0.8rem; }
   .form-group_1 label {
     position: absolute;
     font-family: 'Muli', sans-serif;
@@ -92,7 +92,7 @@ a {
 
 .form-group_2 {
   position: relative;
-  margin: 0; }
+  margin-bottom: 0.8rem; }
   .form-group_2 label {
     position: absolute;
     font-family: 'Muli', sans-serif;
@@ -130,6 +130,50 @@ a {
     font-family: 'Muli', sans-serif;
     padding-left: 0.5rem; }
   .form-group_2 input:focus {
+    background-color: #f8669f;
+    color: white;
+    border: solid 2px #f8669f; }
+
+.form-group_3 {
+  position: relative;
+  margin: 0; }
+  .form-group_3 label {
+    position: absolute;
+    font-family: 'Muli', sans-serif;
+    margin-top: -1.3rem; }
+  .form-group_3 img {
+    position: absolute;
+    width: 10%;
+    margin-top: 0.35rem;
+    margin-left: 10.3rem; }
+  .form-group_3 input {
+    background-color: #afb0be;
+    outline: none;
+    -webkit-transition: background-color 350ms ease 0s, border 350ms ease 0s;
+    transition: background-color 350ms ease 0s, border 350ms ease 0s;
+    color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: solid 2px #AFB0BE;
+    width: 13rem;
+    height: 2rem; }
+  .form-group_3 input::-webkit-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_3 input:-ms-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_3 input::-ms-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_3 input::placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_3 input:focus {
     background-color: #f8669f;
     color: white;
     border: solid 2px #f8669f; }
@@ -571,6 +615,154 @@ a {
 .cls-5_five {
   letter-spacing: -0.01em; }
 
+.form-group_1_ac {
+  position: relative;
+  margin: 0;
+  margin-bottom: 0.8rem; }
+  .form-group_1_ac label {
+    position: absolute;
+    font-family: 'Muli', sans-serif;
+    margin-top: -1.3rem; }
+  .form-group_1_ac img {
+    position: absolute;
+    width: 13%;
+    margin-top: 0.45rem;
+    margin-left: 10rem; }
+  .form-group_1_ac input {
+    background-color: #afb0be;
+    outline: none;
+    -webkit-transition: background-color 350ms ease 0s;
+    transition: background-color 350ms ease 0s;
+    color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: solid 2px #AFB0BE;
+    width: 13rem;
+    height: 2rem; }
+  .form-group_1_ac input::-webkit-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_1_ac input:-ms-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_1_ac input::-ms-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_1_ac input::placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_1_ac input:focus {
+    background-color: #f8669f;
+    color: white;
+    border: solid 2px #f8669f; }
+
+.form-group_2_ac {
+  position: relative;
+  margin-bottom: 0.8rem; }
+  .form-group_2_ac label {
+    position: absolute;
+    font-family: 'Muli', sans-serif;
+    margin-top: -1.3rem; }
+  .form-group_2_ac img {
+    position: absolute;
+    width: 10%;
+    margin-top: 0.35rem;
+    margin-left: 10.3rem; }
+  .form-group_2_ac input {
+    background-color: #afb0be;
+    outline: none;
+    -webkit-transition: background-color 350ms ease 0s, border 350ms ease 0s;
+    transition: background-color 350ms ease 0s, border 350ms ease 0s;
+    color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: solid 2px #AFB0BE;
+    width: 13rem;
+    height: 2rem; }
+  .form-group_2_ac input::-webkit-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_2_ac input:-ms-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_2_ac input::-ms-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_2_ac input::placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_2_ac input:focus {
+    background-color: #f8669f;
+    color: white;
+    border: solid 2px #f8669f; }
+
+.form-group_3_ac {
+  position: relative;
+  margin: 0; }
+  .form-group_3_ac label {
+    position: absolute;
+    font-family: 'Muli', sans-serif;
+    margin-top: -1.3rem; }
+  .form-group_3_ac img {
+    position: absolute;
+    width: 10%;
+    margin-top: 0.35rem;
+    margin-left: 10.3rem; }
+  .form-group_3_ac input {
+    background-color: #afb0be;
+    outline: none;
+    -webkit-transition: background-color 350ms ease 0s, border 350ms ease 0s;
+    transition: background-color 350ms ease 0s, border 350ms ease 0s;
+    color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: solid 2px #AFB0BE;
+    width: 13rem;
+    height: 2rem; }
+  .form-group_3_ac input::-webkit-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_3_ac input:-ms-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_3_ac input::-ms-input-placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_3_ac input::placeholder {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    padding-left: 0.5rem; }
+  .form-group_3_ac input:focus {
+    background-color: #f8669f;
+    color: white;
+    border: solid 2px #f8669f; }
+
+.no_account_wrap_ac {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .no_account_wrap_ac h4 {
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    font-size: 0.9em;
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-top: 2.3rem; }
+
 .nav img {
   width: 100%; }
 
@@ -684,3 +876,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+
+.uneeded{
+    display: none;
+}
