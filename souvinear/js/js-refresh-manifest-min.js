@@ -1,0 +1,1 @@
+window.addEventListener("load",function(a){window.applicationCache&&window.applicationCache.addEventListener("updateready",function(a){window.applicationCache.status==window.applicationCache.UPDATEREADY&&(window.applicationCache.swapCache(),confirm("Updates are available for this mobile web app. Load them?")&&window.location.reload())},!1)},!1);

@@ -19,19 +19,49 @@ app.config(['$routeProvider',
 //                controller: 'authCtrl'
             })
             .when('/main', {
-                title: 'Main',
+                title: 'main',
                 templateUrl: 'partials/main.html'
 //                controller: 'authCtrl'
             })
             .when('/', {
-                title: 'Login',
+                title: 'login',
                 templateUrl: 'partials/login.html',
 //                controller: 'authCtrl',
                 role: '0'
             })
             .when('/add-entry', {
-                title: 'Add Entry',
+                title: 'add entry',
                 templateUrl: 'partials/add-entry.html'
+//                controller: 'authCtrl' 
+            })
+            .when('/hotspot', {
+                title: 'hotspot',
+                templateUrl: 'partials/hotspot.html'
+//                controller: 'authCtrl' 
+            })
+            .when('/swapbox', {
+                title: 'swapbox',
+                templateUrl: 'partials/swapbox.html'
+//                controller: 'authCtrl' 
+            })            
+            .when('/settings', {
+                title: 'settings',
+                templateUrl: 'partials/settings.html'
+//                controller: 'authCtrl' 
+            })
+            .when('/reset', {
+                title: 'reset password',
+                templateUrl: 'partials/reset.html'
+//                controller: 'authCtrl' 
+            })
+            .when('/spotify', {
+                title: 'connect to spotify',
+                templateUrl: 'partials/spotify.html'
+//                controller: 'authCtrl' 
+            })
+            .when('/pin', {
+                title: 'pin a song',
+                templateUrl: 'partials/pin.html'
 //                controller: 'authCtrl' 
             })
             .otherwise({

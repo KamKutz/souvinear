@@ -1,6 +1,3 @@
-$(document).ready(function () {
-  //your code here
-
 
 var nav = document.getElementById('nav');
 
@@ -16,5 +13,4 @@ $("#nav").click(function () {
         $("#nav").addClass("move-nav");
     }
 });
-
-});
+    

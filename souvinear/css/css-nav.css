@@ -1,11 +1,9 @@
-#mobile{
-  transition: all 1s;
-  z-index: 100; 
-  width: 100%;
-}
-
 #nav{
     transition: all 1s;
+    z-index: 100;
+    /* position: absolute; */
+    position: fixed;
+    font-family: 'Averia Sans Libre', cursive;
 }
 
 .wave {
@@ -31,7 +29,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe5893', end
     transform: translateY(600px);
 }
 
-
+/*
+.port_wrap{
+  padding-top: 100px;
+}
+*/
 
 .wave.-one {
   animation: drift 15s infinite linear;
@@ -63,10 +65,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe5893', end
 
 .mobile {
   z-index: 500;
-  position: absolute;
-  
-  margin-top: -560px;
- 
+  /* position: absolute; */
+  margin-top: -580px;
+  margin-left: 50px;
   display: flex;
   width: 100%;
   max-width: 500px;
@@ -78,14 +79,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe5893', end
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 100 ;
   line-height: 60px;
   text-align: center;
   transform: translate3d(0, 0, 0);
   color: #eee;
   text-transform: uppercase;
   letter-spacing: .4em;
-  font-size: 28px;
+  font-size: 58px;
   font-weight: 100;
   text-shadow: 0 1px 0 rgba(black, .1);
   text-indent: .3em;
@@ -96,20 +97,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe5893', end
 }
 
 .mobile ul { 
-  margin: 0;
+  /* margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   width: 100%;
+  z-index: 100;
   list-style-type: none;
   padding-left: 0;
 }
 
 .mobile ul li { 
-  width: 60%; 
+  width: 68%; 
   float: left; 
   text-align: center; 
-  margin: 10px;
+  margin: 12px;
 }
 
 .mobile a { 
@@ -118,6 +120,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe5893', end
   display: block; 
   border-bottom: 1px solid rgba(255, 255, 255, 0.25); 
   text-decoration: none; 
+  line-height: 13px;
+  font-size: 20px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); 
   white-space: nowrap; 
   text-overflow: ellipsis; 
