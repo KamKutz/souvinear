@@ -1,1 +1,0 @@
-function jmp2LocalPage(l){location.href=l}$("#nav_button").click(function(l){$("#nav_button").toggleClass("pull_up"),$(".nav_contain").toggleClass("toggle_nav"),$(this).hasClass("pull_up")?$(this).removeClass("pull_down"):$(this).addClass("pull_down")});
