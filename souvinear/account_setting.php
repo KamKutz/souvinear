@@ -24,6 +24,8 @@
 	<!-- Add2Home Styling -->
 	<link rel="stylesheet" href="css/css-add2home.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/css-nav.css">
+
 
 	<!-- ICONS -->
 	<!-- iPad retina icon -->
@@ -52,14 +54,16 @@
 
 </head>
 
+<?php 
+include 'nav.php';
+?>
+
 <body>
 	<!-- PAGE CONTENT -->
 
 		<!-- Portrait View Start -->
 		<div class="port_wrap">
-			<div class="nav">
-				<img src="graphics/nav.png" alt="Nav">
-			</div>
+
 
 			<div class="profile">
 				<div class="user"></div>
@@ -68,8 +72,6 @@
 					<h4>Doylestown, PA</h4>
 				</div>
 			</div>
-
-
 
 			<div class="overlay"></div>
 			<div class="modal">
@@ -84,9 +86,6 @@
 			  	</div>
 			  </div>
 			</div>
-
-
-
 
 			<div class="user-pin">
 				<h2>pinned song</h2>
@@ -108,6 +107,7 @@
 				<button class="profile_reset_button">reset password</button>
 				<button class="profile_reset_button">log out</button>
 				<button class="delete_account_btn modal_open" href="">Delete Account</button>
+
 			</div>
 					
 			</div>
@@ -127,6 +127,7 @@
 	<!-- JS to change config variables -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/spot_modal.js"></script>
+
 	<script type="text/javascript">
 	    // Customize config variable BEFORE loading addToHome.js file this is how to change the parameters 
 	    var addToHomeConfig = {
@@ -135,6 +136,8 @@
 	</script>
 	<script src="js/js-add2home.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/js-nav.js"></script>
+
 </body>
 
 </html>

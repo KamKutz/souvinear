@@ -1,5 +1,7 @@
 <?php require_once 'includes/initialize.php'; ?>
+
 <?php require_once 'includes/session.php'; ?>
+
 <!DOCTYPE html>
 <html>
   <head>

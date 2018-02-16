@@ -93,9 +93,9 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+// btn.onclick = function() {
+//     modal.style.display = "block";
+// }
 
 btn2.onclick = function() {
     modal.style.display = "none";
