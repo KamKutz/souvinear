@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Muli");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #371443;
+  color: #eee;
+  font-family: Helvetica, Arial;
+  font-size: 3vmin; }
+
+.hidden {
+  display: none; }
+
+/** Buttons **/
+.btn {
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid #3AD4CB;
+  color: #3AD4CB;
+  cursor: pointer;
+  font-size: 3vmin;
+  padding: 0.7em 1.5em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-family: 'Averia Sans Libre', cursive; }
+
+.btn:hover {
+  background: #3AD4CB;
+  color: #371443;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: none;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#2dd5cc), to(#2dd5cc));
+  background-image: linear-gradient(bottom, #2dd5cc 0%, #2dd5cc 100%);
+  font-family: 'Averia Sans Libre', cursive;
+  -webkit-box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5); }
+
+.btn--login {
+  margin: 0 auto; }
+
+/** Now Playing **/
+.now-playing__name {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+  font-family: 'Averia Sans Libre', cursive; }
+
+.now-playing__artist {
+  margin-bottom: 1em;
+  font-family: 'Muli', sans-serif; }
+
+.now-playing__status {
+  margin-bottom: 1em;
+  font-family: 'Muli', sans-serif; }
+
+.now-playing__img {
+  float: left;
+  margin-right: 10px;
+  text-align: right;
+  width: 45%; }
+
+.now-playing__img img {
+  max-width: 80vmin;
+  width: 100%; }
+
+.now-playing__side {
+  margin-left: 5%;
+  width: 45%; }
+
+/** Progress **/
+.progress {
+  border: 0.15em solid #FB5B94;
+  height: 1em; }
+
+.progress__bar {
+  background-color: #FB5B94;
+  border: 0.1em solid transparent;
+  height: 0.8em;
+  margin-top: -0.1rem;
+  margin-left: -0.1rem; }
+
+/** Background **/
+.background {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  -webkit-filter: blur(8em) opacity(0.6);
+          filter: blur(8em) opacity(0.6);
+  position: absolute; }
+
+.main-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 80%;
+  z-index: 1; }
+
+.flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: fixed; }
+  .flex .icon {
+    top: 20%;
+    margin-left: -2rem;
+    margin-top: -2rem;
+    -webkit-transform: scale(0.49);
+            transform: scale(0.49); }
+
+.container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%; }
+
+.icon_none {
+  display: none; }
+
+.main-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
