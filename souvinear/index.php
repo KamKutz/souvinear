@@ -70,15 +70,7 @@
     <!-- JS to change config variables -->
 	<script src="https://spotify-player.herokuapp.com/spotify-player.js"></script>
 <!--	<script src="js/spotify.js"></script> -->
-    <!---->
-<!--      <script src="js/js-hotspot.js"></script>-->
-<!--      <script src="js/modal.js"></script>-->
-      <script src="js/spot_modal.js"></script>
-<!--
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/j s?key=AIzaSyDMTAmp7DTDCyx6gYt5vilMAdjudsL7z0I&callback=initMap">
-	    </script>
--->
+
     
       <script src="js/js-nav.js"></script>
     <!-- controllers -->
@@ -91,7 +83,7 @@
     -->
 
 </head>
-
+<body>
     
 <div id='nav'>
     <div class="mobile"><ul class="group">
@@ -161,23 +153,22 @@
     </g>
 </svg> <br> Settings</a></li>
 </ul></div>
-    <div class='wave -one'>
-    </div>
-<!--     <div class='wave -two'></div> -->
+    <div class='wave -one'></div>
     <div class='wave -three'></div>
     <div class='title'>&#8964;</div>  
   </div>
+<!-- end nav -->
 
-    
-<body>
-        <div data-ng-view="" id="ng-view" class="slide-animation"></div>
+        <div data-ng-view="" id="ng-view" class="slide-animation">    
+        </div>
 
 		<!-- Landscape View Start -->
 		<div class="land_wrap">
-
 		</div>
-        <script src="js/js-nav.js"></script>
-		<!-- Landscape View End -->
+
+        <!-- Landscape View End -->
+        		
+    <script src="js/js-nav.js"></script>
 </body>
 
 </html>

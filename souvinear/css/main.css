@@ -5,6 +5,10 @@
 a {
   text-decoration: none !important; }
 
+.inactive{
+  display: none;
+}
+
 .intro_wrap {
   display: flex;
   justify-content: center;
@@ -743,21 +747,6 @@ body {
   width: 100%;
   z-index: 0; }
 
-.modal {
-  background-color: #FFF;
-  border-radius: 3px;
-  bottom: 50%;
-  left: 0;
-  max-width: 380px;
-  margin: 0 auto;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  transition: all 600ms ease-in-out;
-  visibility: hidden;
-  width: 100%;
-  z-index: 999; }
 
 .btn_spot_modal_wrap {
   width: 100%;
@@ -1077,18 +1066,17 @@ body {
   margin-top: 1rem;
   margin-bottom: 2rem; }
 
-.see-more-btn {
+.see-more-btn, .button-modal {
   border-radius: 50px;
   width: 11rem;
-  height: 2.7rem;
+  height: 3rem;
   border: none;
-  background-image: linear-gradient(bottom, #2dd5cc 0%, #2dd5cc 100%);
+  background: linear-gradient(to bottom, #2dd5cc 0%, #2dd5cc 100%);
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5);
   font-family: 'Muli', sans-serif;
   font-weight: 300;
   font-size: 1em;
-  font-style: italic;
   color: #371443; }
 
 .see-more-btn:active {
@@ -1109,7 +1097,7 @@ html, body {
   font-family: 'Muli', sans-serif;
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 100;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -1443,7 +1431,7 @@ width: 200px;
     font-style: italic;
     font-size: 0.9em; }
   .upcoming_events img {
-    width: 20%;
+    width: 45px;
     margin-top: 0;
     margin-bottom: 15px; }
 

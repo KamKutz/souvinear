@@ -218,7 +218,7 @@ function initMap() {
 			google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
 				return function() { 
 				   //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
-				   infowindow.setContent("<div style = 'width:60vw; min-height:50vh; background-color: rgba(255,255,255, .8);'>" + content + "</div>");
+				   infowindow.setContent("<div style = 'width:60vw; min-height:40vh; background-color: rgba(255,255,255, .8);'>" + content + "</div>");
 				   infowindow.open(map,marker);
 				   
 				  

@@ -50,7 +50,7 @@ width: 100%; */
     color: #371244;
     font-family: 'Muli', sans-serif;
     position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
+    z-index: 200; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
