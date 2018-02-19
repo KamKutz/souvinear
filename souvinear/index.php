@@ -77,15 +77,15 @@
       <script src="app/controllers/mainCtrl.js"></script>
       <script src="app/controllers/editCtrl.js"></script>
       <script src="app/controllers/addCtrl.js"></script>
-    <!--
-      <script src="app/controllers/authCtrl.js"></script>
-      <script src="app/controllers/loginCtrl.js"></script>
+      <!-- 
+        <script src="app/controllers/authCtrl.js"></script>
+        <script src="app/controllers/loginCtrl.js"></script>
     -->
-
+   
 </head>
-<body>
+<body ng-controller="MyCtrl">
     
-<div id='nav'>
+<div id='nav' ng-hide="navBoolean">
     <div class="mobile"><ul class="group">
     
 <li><a href="#/hotspot"><svg width="45px" height="57px" viewBox="0 0 45 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
