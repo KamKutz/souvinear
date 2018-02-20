@@ -14,17 +14,27 @@
 	<div class="flex">
 		<img class="icon" src="souvinear_icon-180x180.png" alt="Souvinear Icon">
 	</div>
-
+    
+    <overlayInfo venue="locations"></overlayInfo>
+		<div id="map-container" ng-controller="MainController">
+			<div id="map" style="position: inherit;" ></div>
+		</div>
+<!--
 	<div class="container">
 	    <div class="login-container hidden" id="js-login-container">
 	      <button class="btn btn--login" id="js-btn-login">Login with Spotify</button>
 	    </div>
 	    <div class="main-container hidden" id="js-main-container"></div>
 	</div>
+-->
 
 	<script src="https://spotify-player.herokuapp.com/spotify-player.js"></script>
 	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMTAmp7DTDCyx6gYt5vilMAdjudsL7z0I&callback=initMap">
+	</script>
 	<script src="js/main.js" ></script>
+    <script src="js/googlemaps.js"></script>
 
 </body>
 </html>
