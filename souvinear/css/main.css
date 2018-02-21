@@ -12,9 +12,10 @@ a {
   flex-direction: column; }
   .intro_wrap h3 {
     font-family: 'Averia Sans Libre', cursive;
+    font-weight: 100;
     font-size: 3em;
     margin: 0;
-    margin-top: 2rem;
+    margin-top: 0rem;
     color: #371443; }
 
 .form-wrap {
@@ -23,7 +24,7 @@ a {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  margin-top: 3.7rem;
+  margin-top: 1.5rem;
   margin-bottom: 3rem; }
 
 .form-group_1 {
@@ -124,7 +125,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   width: 100%; }
   .log-in_wrap .log-in {
     padding: 0;
@@ -132,7 +133,7 @@ a {
     width: 12rem;
     border: none;
     background-image: linear-gradient(bottom, #2dd5cc 0%, #2dd5cc 100%);
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5); }
     .log-in_wrap .log-in h4 {
       margin: 0;
@@ -163,7 +164,7 @@ a {
     font-family: 'Muli', sans-serif;
     font-style: italic;
     font-size: 0.9em;
-    padding-left: 0.8rem; }
+    margin-left: -9.3rem; }
 
 .bottom_bar_wrap {
   display: flex;
@@ -232,7 +233,7 @@ a {
       font-family: 'Averia Sans Libre', cursive;
       font-size: 3.3em;
       margin: 0;
-      margin-top: 2.5rem;
+      margin-top: 0rem;
       color: #371443; }
   .form_wrap {
     display: flex;
@@ -311,7 +312,7 @@ a {
       font-family: 'Averia Sans Libre', cursive;
       font-size: 4em;
       margin: 0;
-      margin-top: 2.5rem;
+      margin-top: 0rem;
       color: #371443; }
   .form_wrap {
     display: flex;
@@ -358,7 +359,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7.5rem; }
+    margin-top: 4.3rem; }
     .log-in_wrap .log-in {
       border-radius: 50px;
       width: 67%;
@@ -407,6 +408,15 @@ a {
 
 .cls-5_five {
   letter-spacing: -0.01em; }
+
+.form-wrap_ac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 0rem;
+  margin-bottom: 3rem; }
 
 .form-group_1_ac {
   position: relative;
@@ -504,12 +514,14 @@ a {
 
 .no_account_wrap_ac {
   display: flex;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-left: -8rem;
+  margin-top: 2rem;
+  z-index: 100; }
   .no_account_wrap_ac h4 {
     width: 100%;
     position: fixed;
-    bottom: 2.3rem;
-    left: 0.7rem;
+    bottom: 2rem;
     color: white;
     z-index: 100;
     font-family: 'Muli', sans-serif;
@@ -589,6 +601,9 @@ a {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 0px #248d8f, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5); }
 
+.port_wrap {
+  padding-top: 7.5rem; }
+
 .spotify_pin_wrap {
   width: 100%;
   background-color: #ededf7;
@@ -613,9 +628,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%; 
-  padding-top: 130px;
-}
+  width: 100%; }
   .spotify_pin_intro h3 {
     font-family: 'Averia Sans Libre', cursive;
     font-size: 1.5em;
@@ -818,7 +831,7 @@ body {
     font-family: 'Averia Sans Libre', cursive;
     font-size: 1.3em;
     font-weight: 100;
-    margin-top: 30%;
+    margin-top: 0%;
     color: #371443; }
 
 .login-container {
@@ -854,7 +867,7 @@ body {
   background-image: linear-gradient(bottom, #2dd5cc 0%, #2dd5cc 100%);
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5);
-  margin: 3.5rem 0 0 0;
+  margin: 2rem 0 0 0;
   font-family: 'Muli', sans-serif;
   font-weight: 300;
   font-size: 1em;
@@ -912,7 +925,6 @@ body {
   align-items: center; }
 
 .pinned_container {
-    padding-top: 95px;
   margin-bottom: 1.2rem; }
   .pinned_container .pin_flex {
     display: flex;
@@ -1236,32 +1248,142 @@ svg {
   display: block;
   margin: auto; }
 
-.profile_button, .button-modal {
-  padding: 15px;
-}
-
-button .add{
-width: 200px;
-}  
-
-.profile_delete{
-  color: #aaa;
-  padding: 20px;
-}
+button {
+  border-radius: 25px;
+  background-color: #2DD5CC;
+  font-size: 1rem;
+  font-weight: 500;
+  min-width: 140px;
+  box-shadow: 0px 3px 0px #23B8BB;
+  border: #155658; }
 
 .bn-align {
   padding: 15px;
   display: flex;
   justify-content: center; }
 
+#gather {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7.75rem; }
+  #gather .new-entry-bar {
+    background-color: #371443;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem; }
+    #gather .new-entry-bar h5 {
+      color: white;
+      font-family: 'Muli', sans-serif;
+      font-size: 1em;
+      font-weight: 100;
+      margin: 0.4rem 0 0.4rem 0;
+      top: 0; }
+  #gather .entry-container-add {
+    width: 80%;
+    margin-top: 0.75rem; }
+    #gather .entry-container-add input {
+      height: 2.25rem;
+      width: 95%;
+      background-color: #ededfa;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border: solid 1px #D5D5E0;
+      padding-left: 3rem; }
+    #gather .entry-container-add input::placeholder {
+      font-family: 'Muli', sans-serif;
+      padding-left: 0rem; }
+    #gather .entry-container-add textarea {
+      width: 95%;
+      border: solid 1px #D5D5E0;
+      background-color: #ededfa;
+      height: 10rem;
+      border-radius: 7.5px;
+      padding-left: 3rem; }
+    #gather .entry-container-add textarea::placeholder {
+      font-family: 'Muli', sans-serif;
+      padding-left: 0rem; }
+    #gather .entry-container-add .input-icons-container .background-icon {
+      position: absolute;
+      width: 40px;
+      height: 40px; }
+    #gather .entry-container-add .input-icons-container .head {
+      margin-top: -0.1rem; }
+
+#save-entry-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.3rem;
+  margin-bottom: 2rem; }
+  #save-entry-container button {
+    width: 14rem;
+    height: 2.5rem;
+    position: relative;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.3em;
+    color: #371443;
+    font-style: italic;
+    padding-left: 2.25rem; }
+    #save-entry-container button img {
+      position: absolute;
+      width: 27.5px;
+      height: 27.5px;
+      margin-left: -11.5rem; }
+
+.add_entry_cancel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem; }
+  .add_entry_cancel a {
+    font-family: 'Muli', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1em;
+    color: #371443; }
+
+#collected-songs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #collected-songs h4 {
+    font-family: 'Averia Sans Libre', cursive;
+    font-weight: 100;
+    font-size: 1.35em;
+    color: #371443;
+    margin: 1rem 0 0 0; }
+
+#collected-badges {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #collected-badges h4 {
+    font-family: 'Averia Sans Libre', cursive;
+    font-weight: 100;
+    font-size: 1.35em;
+    color: #371443;
+    margin: 1rem 0 1rem 0; }
+
+.badge_temp_entry {
+  display: flex;
+  justify-content: space-around; }
+
 .profile {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%; 
-  padding-top: 120px;
-  }
+  width: 100%; }
 
 .user_info {
   margin-top: 1rem; }
@@ -1388,10 +1510,6 @@ width: 200px;
 .nav img {
   width: 100%; }
 
-.upcoming{
-    padding-top: 80px;
-}
-
 .upcoming h2 {
   font-family: 'Averia Sans Libre', cursive;
   margin: 0;
@@ -1471,7 +1589,3 @@ width: 200px;
   position: fixed;
   display: flex;
   justify-content: flex-end; }
-
-.uneeded{
-    display: none;
-}

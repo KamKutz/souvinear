@@ -1,3 +1,14 @@
+
+.form-wrap_ac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+}
+
 .form-group_1_ac {
   position: relative;
   margin: 0;
@@ -113,11 +124,13 @@
 .no_account_wrap_ac {
   display: flex;
   justify-content: flex-start;
+  margin-left: -8rem;
+  margin-top: 2rem;
+  z-index: 100;
   h4 {
     width: 100%;
     position: fixed;
-    bottom: 2.3rem;
-    left: 0.7rem;
+    bottom: 2rem;
     color: white;
     z-index: 100;
 

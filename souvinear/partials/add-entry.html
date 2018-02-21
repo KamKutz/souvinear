@@ -1,68 +1,80 @@
 <div class="port_wrap">
     <div ng-controller="addCtrl">
       <div id="gather">
+
+      	<div class="new-entry-bar">
+      		<h5>you're starting a new entry</h5>
+      	</div>
 		 
-		 <div id="headliner-input-continer" class="first-container">
+		 <div id="headliner-input-container" class="entry-container-add">
 			 <div class="input-icons-container">
-				 <img class="icon" src="graphics/headliner.svg">
-			 	<img class="background-icon" src="graphics/inputcolorblock.svg">
+			 	<img class="background-icon head" src="graphics/headliner_icon.svg">
 			 </div>
           	<input type="text" name="headliner" placeholder="Headliner" id="headliner" ng-model="headliner" class="text-input">
 		  </div>
 		  
-		  <div id="opener-input-container" class="first-container">
+		  <div id="opener-input-container" class="entry-container-add">        
 			  <div class="input-icons-container">
-				 <img class="icon" src="graphics/opener.svg">
-			 	<img class="background-icon" src="graphics/inputcolorblock.svg">
+			 	<img class="background-icon" src="graphics/opener_icon.svg">
 			 </div>
-          	<input type="text" name="supporting_act"  placeholder="Supporting Act" id="supporting_act" class="text-input" ng-model="supporting_act">
-		  </div>
+          	<input type="text" name="supporting_act"  placeholder="Opener" id="supporting_act" class="text-input" ng-model="supporting_act">
+		  </div>         
         
-		<div id="venue-input-container" class="second-container">
+		<div id="venue-input-container" class="entry-container-add">     
 			<div class="input-icons-container">
-				 <img class="icon" src="graphics/hotspot.svg">
-			 	<img class="background-icon" src="graphics/inputcolorblock.svg">
+			 	<img class="background-icon" src="graphics/event_title_icon.svg">
 			 </div>
-          <input type="text" name="venue" placeholder="Venue" id="venue" ng-model="venue" class="text-input">
-        </div>
+          <input type="text" name="venue" placeholder="Event Title" id="venue" ng-model="venue" class="text-input">
+        </div>   
 		  
-		<div id="date-input-container" class="third-container">
-			<div class="input-icons-container">
-				 <img class="icon" src="graphics/">
-			 	<img class="background-icon" src="graphics/inputcolorblock.svg">
-			 </div>
-          <input type="date" name="concert_date" id="concert_date" ng-model="concert_date" class="text-input" placeholder="date">
-		</div>
-     	
-        <div id="date-input-container">
-			<div class="input-icons-container">
-				 <img class="icon" src="graphics/">
-			 	<img class="background-icon" src="graphics/inputcolorblock.svg">
-			 </div>
-          <input type="time" name="concert_time" id="concert_time" ng-model="concert_time" class="text-input" placeholder="">
+		<div id="date-input-container" class="entry-container-add">    
+			<div class="input-icons-container">   
+			 	<img class="background-icon" src="graphics/location_icon.svg">
+			 </div>   
+          <input type="time" name="concert_time" id="concert_time" ng-model="concert_time" class="text-input" placeholder="Location">
 		</div>  
-          
+
+		<div id="date-input-container" class="entry-container-add">    
+			<div class="input-icons-container">
+			 	<img class="background-icon" src="graphics/date_icon.svg">
+			 </div>
+          <input type="date" name="concert_date" id="concert_date" ng-model="concert_date" class="text-input" placeholder="Date">
+		</div>      
+     	
+
 <!--
 		<div id="photo-input-container">
 			<input type="file" name="image" id="photoInput">  
 		</div>
 -->
 		 
-		<div id="journal-input-container"  class="container-padding">
+		<div id="journal-input-container"  class="entry-container-add">
 			<div class="input-icons-container">
-				 <img class="icon" src="graphics/journal.svg">
-			 	<img class="background-icon"src="graphics/inputcolorblock.svg">
+				 <img class="background-icon" src="graphics/note_icon.svg">
 			 </div>
-       <textarea type="text" name="entry" id="entry" placeholder="What was the best part of the night?" ng-model="entry" class="textarea"></textarea>
+       		<textarea type="text" name="entry" id="entry" placeholder="What was your favorite part?" ng-model="entry" class="textarea"></textarea>
 		</div>
 
       </div>
 		
-		<div id="collected-songs"></div>
-		<div id="collected-badges"></div>
+		<div id="collected-songs">
+			<h4>No collected songs yet!</h4>
+		</div>
+
+		<div id="collected-badges">
+			<h4>No collected badges yet!</h4>
+		</div>
+
+		<div class="badge_temp_entry">
+			<img src="graphics/badge_pop.svg" alt="Badge Placeholder">
+			<img src="graphics/badge_pop.svg" alt="Badge Placeholder">
+			<img src="graphics/badge_pop.svg" alt="Badge Placeholder">
+		</div>
 		
 		<div id="save-entry-container">
-			<button type="submit" name="submit" ng-click="add_concert()"><img src="graphics/saveentry.svg"></button>
+			<button type="submit" name="submit" ng-click="add_concert()">save this entry
+				<img src="graphics/lock_transp.svg" alt="Lock Icon">
+			</button>
 		</div>
     </div>
     
@@ -72,5 +84,9 @@
     <input type='submit' name='submit' value='Log Out'>
     </form>
     
-    <a href="index.php">Cancel</a>
+	<div class="add_entry_cancel">
+		  <a href="index.php">Cancel</a>
+	</div>
+
+
 	</div>
