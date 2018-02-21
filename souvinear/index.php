@@ -166,7 +166,7 @@
 <!--     <div class='wave -two'></div> -->
     <div class='wave -three'></div>
     <div class='title'>&#8964;</div>  
-  </div>
+</div>
 
     
 <body>

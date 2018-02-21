@@ -1,0 +1,150 @@
+#gather {
+	display: flex;     
+	width: 100%;      
+	flex-direction: column;      
+	justify-content: center;       
+	align-items: center;       
+	padding-top: 7.75rem;      
+	.new-entry-bar {
+		background-color: #371443;
+		width: 100%;
+		display: flex;     
+		justify-content: center;    
+		margin-bottom: 2rem;
+		h5 {
+			color: white;        
+			font-family: 'Muli', sans-serif;              
+			font-size: 1em;                 
+			font-weight: 100;            
+			margin: 0.4rem 0 0.4rem 0;            
+			top: 0;         
+		}
+	}
+	.entry-container-add {
+		width: 80%; 
+		margin-top: 0.75rem;    
+		input {
+			height: 2.25rem;
+			width: 95%;
+			background-color: #ededfa;
+			border-top-right-radius: 40px;
+    		border-bottom-right-radius: 40px;
+    		border-top-left-radius: 25px;
+    		border-bottom-left-radius: 25px;
+   			border: solid 1px #D5D5E0;
+   			padding-left: 3rem;
+		}
+		 input::placeholder {
+		    font-family: 'Muli', sans-serif;
+		    padding-left: 0rem;
+		  }
+		textarea {
+			width: 95%;
+			border: solid 1px #D5D5E0;
+			background-color: #ededfa;
+			height: 10rem;
+			border-radius: 7.5px;
+			padding-left: 3rem;
+		}
+		textarea::placeholder {
+		    font-family: 'Muli', sans-serif;
+		    padding-left: 0rem;		
+		}
+		.input-icons-container {
+			// width: 20%;
+			// position: relative;
+			.background-icon {
+				position: absolute;
+				width: 40px;
+				height: 40px;
+			}
+			.head {
+				margin-top: -0.1rem;
+			}
+		}
+	}
+}
+
+#save-entry-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.3rem;
+	margin-bottom: 2rem;
+	button {
+		width: 14rem;
+		height: 2.5rem;
+		position: relative;
+
+		font-family: 'Muli', sans-serif;              
+		font-size: 1.3em;      
+		color: #371443;
+		font-style: italic;
+		padding-left: 2.25rem;
+		img {
+			position: absolute;
+			width: 27.5px;
+			height: 27.5px;
+			margin-left: -11.5rem;
+		}
+	}
+}
+
+.add_entry_cancel {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 1.5rem;
+	padding-top: 1.5rem;
+	a {
+		font-family: 'Muli', sans-serif;     
+		font-weight: 100;
+		font-style: italic;         
+		font-size: 1em;      
+		color: #371443;
+	}
+}
+
+#collected-songs {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h4 {
+		font-family: 'Averia Sans Libre', cursive;
+		font-weight: 100;
+     	font-size: 1.35em;
+     	color: #371443;
+     	margin: 1rem 0 0 0;
+	}
+}
+
+#collected-badges {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h4 {
+		font-family: 'Averia Sans Libre', cursive;
+		font-weight: 100;
+     	font-size: 1.35em;
+     	color: #371443;
+     	margin: 1rem 0 1rem 0;
+	}
+}
+
+.badge_temp_entry {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+

@@ -10,9 +10,10 @@ a {
   flex-direction: column;
   h3 {
       font-family: 'Averia Sans Libre', cursive;
+      font-weight: 100;
       font-size: 3em;
       margin: 0;
-      margin-top: 2rem;
+      margin-top: 0rem;
       color: #371443;
   }
 }
@@ -23,7 +24,7 @@ a {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  margin-top: 3.7rem;
+  margin-top: 1.5rem;
   margin-bottom: 3rem;
 }
 
@@ -143,7 +144,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     width: 100%;
     .log-in {
       padding: 0;
@@ -151,7 +152,7 @@ a {
       width: 12rem;
       border: none;
       background-image: linear-gradient(bottom, rgb(45,213,204) 0%, rgb(45,213,204) 100%);
-      text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+      text-shadow: 0px -1px 0px rgba(0,0,0,.25);
       box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
        h4 {
         margin: 0;
@@ -187,7 +188,7 @@ a {
     font-family: 'Muli', sans-serif;
     font-style: italic;
     font-size: 0.9em;
-    padding-left: 0.8rem;
+    margin-left: -9.3rem;
   }
 }
 
@@ -282,7 +283,7 @@ a {
       font-family: 'Averia Sans Libre', cursive;
       font-size: 3.3em;
       margin: 0;
-      margin-top: 2.5rem;
+      margin-top: 0rem;
       color: #371443;
   }
 }
@@ -392,7 +393,7 @@ a {
         font-family: 'Averia Sans Libre', cursive;
         font-size: 4em;
         margin: 0;
-        margin-top: 2.5rem;
+        margin-top: 0rem;
         color: #371443;
     }
   }
@@ -454,7 +455,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 7.5rem;
+      margin-top: 4.3rem;
       .log-in {
          border-radius: 50px;
          width: 67%;

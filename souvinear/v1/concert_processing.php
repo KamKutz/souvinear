@@ -3,12 +3,11 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-  require_once '../includes/initialize.php'; 
+  require_once 'includes/initialize.php'; 
 
     //get data from add-entry.html & addCtrl.js
     $postdata = file_get_contents("php://input");
     $request = json_decode($postdata);
-
           
     $user_id = "24";
     $headliner = $request->headliner;
@@ -16,9 +15,25 @@ header("Content-Type: application/json; charset=UTF-8");
     $venue = $request->supporting_act;
     $concert_date = $request->concert_date;
     $concert_time = $request->concert_time;
-    $entry = $request->concert_entry;
+    $entry = $request->entry;
+
+//    $outp = ""; 
+//
+//        $outp .= '{"HEADLINER":"'  . $_POST["headliner"] . '",';
+//    $outp .= '"SUPPORT":"'   . $_POST["supporting_act"]        . '",';
+//    $outp .= '"ENTRY":"'. $_POST["entry"]     . '"}';
+//
+//    $outp ='{"concertEntry":['.$outp.']}';
+
+//    $user_id = "24";
+//    $headliner = $_POST['headliner'];
+//    $supporting_act = $_POST['supporting_act'];
+//    $venue = $_POST['venue'];
+//    $concert_date = $_POST['concert_date'];
+//    $concert_time = $_POST['concert_time'];
+//    $entry = $_POST['entry'];
       
-      echo $user_id;
+//      echo $user_id;
       
     $query = "INSERT INTO concert_info (";
     $query .= " user_id, concert_date, concert_time, venue, headliner, supporting_act, entry";
@@ -27,5 +42,5 @@ header("Content-Type: application/json; charset=UTF-8");
     $query .= ")"; 
       
     $result = mysqli_query($connection, $query);
-  
+
 ?>
