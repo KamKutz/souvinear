@@ -263,7 +263,7 @@ function initMap() {
 
 					if(newLat == true && newLng == true){
 						console.log(locations[i][0] +' '+  "HELLO");
-						
+                    
 						
 					} else{
 						console.log(locations[i][0]+' '+ "GOODBYE");

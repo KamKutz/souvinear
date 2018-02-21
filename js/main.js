@@ -5,6 +5,11 @@ var mainContainer = document.getElementById('js-main-container'),
 
 var spotifyPlayer = new SpotifyPlayer();
 
+$.get( "https://api.spotify.com/v1/search?q=track%3Anumb+artist%3Alinkin+park&type=track", 
+    function( data ) {
+        console.log(data);  
+    });
+
 //var template = function (data) {
 //  return `
 //    <div class="main-wrapper">       
