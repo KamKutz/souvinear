@@ -7,6 +7,10 @@ var hotspotWindow; //holds infowindow for hotspot
 var srcImage = 'overlay_img.jpg';
 var i;
 
+var hotspotActive = document.getElementById("hotspot-active");
+var userName = "Destiny";
+
+
 	//DATA OF HOTSPOT LOCATIONS
 	var locations = [
 		['FILLMORE', 39.9658, -75.1347, 'bleachers', '3/1/18', "https://www.ticketmaster.com/The-Fillmore-Philadelphia-tickets-Philadelphia/venue/17012"],
@@ -248,29 +252,28 @@ function initMap() {
           handleLocationError(false, infoWindow, map.getCenter());
 		}
 		
-		userPos(function(id){       
+		userPos(function(id){  
+             
                 var lat = id.coords.latitude;
                 var lng = id.coords.longitude;
 				var temp = .0006;
 				
-
-				for (i = 0; i < locations.length; i++) {  
+             setTimeout(function(){
+				
+                 for (i = 0; i < locations.length; i++) { 
+                    enterHTML(locations[i][0],userName);
+                     
 					var newLat = rangeChecker(lat, locations[i][1], temp );
 					// console.log(newLat);
 					
 					var newLng = rangeChecker(lng,locations[i][2], temp );
 					// console.log(newLng);
-
-					if(newLat == true && newLng == true){
-						console.log(locations[i][0] +' '+  "HELLO");
                     
-						
-					} else{
-						console.log(locations[i][0]+' '+ "GOODBYE");
-					}
-					
+         
+                    checkLocation(newLat,newLng);
+                
 				};
-					
+				}, 5000);
 
             
                 
@@ -306,4 +309,29 @@ function userPos(callback) {
 function rangeChecker(op, target, range){
     return op < target + range && op > target - range;
 }
-			 
+
+
+//checks user locations
+function checkLocation(Lat,Lng){
+    
+    if(Lat == true && Lng == true){
+        console.log(locations[i][0] +' '+  "HELLO");
+                       
+        hotspotActive.classList.remove('hidden');
+        hotspotActive.classList.add('visible');
+                    
+    } else{
+        console.log(locations[i][0]+' '+ "GOODBYE");
+        hotspotActive.classList.remove('visible');
+        hotspotActive.classList.add('hidden');
+    }
+    
+}
+
+function enterHTML(venueName,user){
+    var popup = "<p> HEY " + user + " you're at " + venueName + " collect your pinned song!"
+    
+    console.log(popup);
+    
+    hotspotActive.innerHTML = popup;
+}
