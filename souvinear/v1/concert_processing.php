@@ -1,40 +1,28 @@
 <?php
-
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-  require_once 'includes/initialize.php'; 
+   require_once 'includes/initialize.php'; 
 
     //get data from add-entry.html & addCtrl.js
-    $postdata = file_get_contents("php://input");
-    $request = json_decode($postdata);
-          
+
+    $url = "php://input";
+    $contents = file_get_contents($url); 
+    $contents = utf8_encode($contents); 
+    $postdata = json_decode($contents); 
+
     $user_id = "24";
-    $headliner = $request->headliner;
-    $supporting_act = $request->supporting_act;
-    $venue = $request->supporting_act;
-    $concert_date = $request->concert_date;
-    $concert_time = $request->concert_time;
-    $entry = $request->entry;
+    $headliner = $postdata->{'headliner'};
+    $supporting_act = $postdata->{'supporting_act'};
+    $venue = $postdata->{'venue'};
+    $concert_date = $postdata->{'concert_date'};
+    $concert_time = $postdata->{'concert_time'};
+    $entry = $postdata->{'entry'};
 
-//    $outp = ""; 
-//
-//        $outp .= '{"HEADLINER":"'  . $_POST["headliner"] . '",';
-//    $outp .= '"SUPPORT":"'   . $_POST["supporting_act"]        . '",';
-//    $outp .= '"ENTRY":"'. $_POST["entry"]     . '"}';
-//
-//    $outp ='{"concertEntry":['.$outp.']}';
+     echo var_dump($postdata);
 
-//    $user_id = "24";
-//    $headliner = $_POST['headliner'];
-//    $supporting_act = $_POST['supporting_act'];
-//    $venue = $_POST['venue'];
-//    $concert_date = $_POST['concert_date'];
-//    $concert_time = $_POST['concert_time'];
-//    $entry = $_POST['entry'];
-      
-//      echo $user_id;
-      
+      echo $venue;
+
     $query = "INSERT INTO concert_info (";
     $query .= " user_id, concert_date, concert_time, venue, headliner, supporting_act, entry";
     $query .= ") VALUES (";

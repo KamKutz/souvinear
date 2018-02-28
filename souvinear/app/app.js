@@ -64,6 +64,11 @@ app.config(['$routeProvider',
                 templateUrl: 'partials/pin.html'
 //                controller: 'authCtrl' 
             })
+            .when('/edit-entry', {
+                title: 'pin a song',
+                templateUrl: 'partials/edit-entry.html'
+//                controller: 'authCtrl' 
+            })
             .otherwise({
                 redirectTo: '/login'
             });

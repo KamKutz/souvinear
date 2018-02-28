@@ -1,75 +1,85 @@
 <div class="port_wrap">
-
-    <form method="post">
+    <div ng-controller="editDisplayCtrl">
       <div id="gather">
-
-          <div id="headliner-input-container" class="entry-container-edit">
+          <div class="new-entry-bar">
+      		<h5>you're editing an entry</h5>
+      	</div>
+		 <form ng-submit="edit_concert()">
+		 <div id="headliner-input-container" class="first-container">
 			 <div class="input-icons-container">
-				 <img class="icon" src="../graphics/headliner.svg">
-			 	<img class="background-icon" src="../graphics/inputcolorblock.svg">
+				 <img class="background-icon head" src="graphics/headliner_icon.svg">
 			 </div>
-          	<input type="text" name="headliner" value="<?php echo $row['headliner']; ?>" id="headliner" class="text-input">
+          	<input type="text" name="headliner" placeholder="Headliner" id="headliner" value="{{ x.HEADLINER }}" ng-model="formData.headliner" class="text-input">
 		  </div>
-
-		  <div id="opener-input-container" class="entry-container-edit">
+		  
+		  <div id="opener-input-container" class="entry-container-add">
 			  <div class="input-icons-container">
-				 <img class="icon" src="../graphics/opener.svg">
-			 	<img class="background-icon" src="../graphics/inputcolorblock.svg">
+				 <img class="background-icon" src="graphics/opener_icon.svg">
 			 </div>
-          	<input type="text" name="supporting_act"  value="<?php echo $row['supporting_act']; ?>" id="supporting_act" class="text-input">
+          	<input type="text" name="supporting_act"  placeholder="Supporting Act" id="supporting_act" class="text-input" value="{{ x.SUPPORTING_ACT}}" ng-model="formData.supporting_act">
 		  </div>
-
-		<div id="venue-input-container" class="entry-container-edit">
+        
+		<div id="venue-input-container" class="entry-container-add">
 			<div class="input-icons-container">
-				 <img class="icon" src="../graphics/hotspot.svg">
-			 	<img class="background-icon" src="../graphics/inputcolorblock.svg">
+				 <img class="background-icon" src="graphics/event_title_icon.svg">
 			 </div>
-          <input type="text" name="venue"  value="<?php echo $row['venue']; ?>" id="venue" class="text-input">
+          <input type="text" name="venue" placeholder="Venue" id="venue" value="{{ x.VENUE}}" ng-model="formData.venue" class="text-input">
+        </div>
+		  
+		<div id="date-input-container" class="entry-container-add">
+			<div class="input-icons-container">
+				 <img class="background-icon" src="graphics/date_icon.svg">
+			 </div>
+          <input type="date" name="concert_date" id="concert_date" value="{{ x.CONCERT_DATE}}" ng-model="formData.concert_date" class="text-input" placeholder="date">
+		</div>
+     	
+        <div id="date-input-container" class="entry-container-add">
+			<div class="input-icons-container">
+				 <img class="background-icon" src="graphics/date_icon.svg">
+			 </div>
+          <input type="time" name="concert_time" id="concert_time" value="{{ x.CONCERT_TIME}}" ng-model="formData.concert_time" class="text-input" placeholder="">
+		</div>  
+          
+<!--
+		<div id="photo-input-container">
+			<input type="file" name="image" id="photoInput">  
+		</div>
+-->
+		 
+		<div id="journal-input-container"  class="entry-container-add">
+			<div class="input-icons-container">
+				 <img class="background-icon" src="graphics/note_icon.svg">
+			 </div>
+       <textarea type="text" name="entry" id="entry" value="{{ x.ENTRY}}" ng-model="formData.entry" class="textarea"></textarea>
+		</div>
+
+		<div id="collected-songs">
+            <h4>No collected songs yet!</h4>
+        </div>
+		<div id="collected-badges">
+            <h4>No collected badges yet!</h4>
         </div>
 
-		<div id="date-input-container" class="entry-container-edit">
-			<div class="input-icons-container">
-				 <img class="icon" src="../graphics/future.svg">
-			 	<img class="background-icon" src="../graphics/inputcolorblock.svg">
-			 </div>
-          <input type="date" name="concert_date" id="concert_date" class="text-input" value="<?php echo $row['concert_date']; ?>">
+        <div class="badge_temp_entry">
+			<img src="graphics/badge_pop.svg" alt="Badge Placeholder">
+			<img src="graphics/badge_pop.svg" alt="Badge Placeholder">
+			<img src="graphics/badge_pop.svg" alt="Badge Placeholder">
 		</div>
-
-        <div id="date-input-container">
-			<div class="input-icons-container">
-				 <img class="icon" src="graphics/future.svg">
-			 	<img class="background-icon" src="../graphics/inputcolorblock.svg">
-			 </div>
-          <input type="time" name="concert_time" id="concert_time" class="text-input" value="<?php echo $row['concert_time']; ?>">
-		</div>
-
-		<div id="journal-input-container"  class="container-padding">
-			<div class="input-icons-container">
-				 <img class="icon" src="../graphics/journal.svg">
-			 	<img class="background-icon"src="../graphics/inputcolorblock.svg">
-			 </div>
-       <textarea type="text" name="entry" id="entry" value="<?php echo $row['entry']; ?>" class="textarea"></textarea>
-		</div>
-
-      </div>
-<!--
-
-		<div id="collected-songs"></div>
-		<div id="collected-badges"></div>
--->
-
+             
 		<div id="save-entry-container">
-			<button type="submit" name="submit" onclick="editEntry()"><img src="../graphics/saveentry.svg"></button>
+			<button type="submit" name="submit">save this entry<img src="graphics/lock_transp.svg" alt="Lock Icon"></button>
 		</div>
-
-    </form>
-    <form action="php/delete_processing.php" method="post">
-        <input type="date" name="concert_date" id="concert_date" value="<?php echo $row['concert_date']; ?>" class="uneeded">
-
-
-          <input type="text" name="headliner" id="headliner" value="<?php echo $row['headliner']; ?>" class="uneeded">
-    <input id="delete_me"type="submit" name="submit" value="delete">
-    </form>
-    <a href="#/main">Cancel</a>
-
+        </form>
     </div>
+    
+    <div id="message"></div>
+    </div>
+    
+        <form action='php/logout_processing.php' method='post'>
+    <input type='submit' name='submit' value='Log Out'>
+    </form>
+    
+    <div class="add_entry_cancel">
+		  <a href="index.php">Cancel</a>
+	</div>
+	</div>

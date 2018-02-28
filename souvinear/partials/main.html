@@ -38,8 +38,10 @@
                     
 					<div class="flex" id="entry_flex">
                        
+<!--
                     <div>
                     <form ng-controller="editCtrl" method="post" id="edit_entry" >
+                        
                         <p>
                           <input type="text" name="headliner" id="headliner" ng-model="headliner" value="{{ x.HEADLINER}}" class="uneeded">
                           </p>   
@@ -50,27 +52,31 @@
                         <input type="submit" name="submit" id="concert_edit" value="Edit">
                     </form>
                     </div>
+-->
                         
                         <div class="concert_info">
 						<h6>{{ x.HEADLINER}}</h6>
 						<h6>{{ x.CONCERT_DATE }}</h6>
 						<h6>{{ x.VENUE }}</h6>
                         </div>
-                        
+                        <img class="legend" src="graphics/legend.jpeg" alt="John Legend">
                         <div>
-                        <form>
-                        <button type="submit" name="submit">
-                            <p>
-                          <input type="text" name="headliner" id="headliner" value="{{ x.HEADLINER}}" class="uneeded">
-                          </p>   
+                        <form ng-submit="getEditInfo()" ng-controller="editDisplayCtrl" id="edit_entry">
+                        <a href="#/edit-entry">
+                        <button type="submit" name="submit" >
                         <p>
-                          <input type="date" name="concert_date" id="concert_date" value="{{ x.CONCERT_DATE }}" class="uneeded">
+                          <input type="text" name="headliner" id="headliner" value="{{ x.HEADLINER}}" class="uneeded" ng-model="headliner">
+                        </p>   
+                            <p>EDIT</p>
+                        <p>
+                          <input type="date" name="concert_date" id="concert_date" value="{{ x.CONCERT_DATE }}" class="uneeded" ng-model="concert_date">
                         </p>                 
 
-					   <img class="legend" src="graphics/legend.jpeg" alt="John Legend">
-                            </button>
+<!--					   <img class="legend" src="graphics/legend.jpeg" alt="John Legend">-->
+                        </button>
+                        </a>
                             </form>
-                    </div>
+                        </div>
             
 				</div>
 

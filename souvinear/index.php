@@ -84,6 +84,7 @@
     <!-- controllers -->
       <script src="app/controllers/mainCtrl.js"></script>
       <script src="app/controllers/editCtrl.js"></script>
+      <script src="app/controllers/editDisplayCtrl.js"></script>
       <script src="app/controllers/addCtrl.js"></script>
     <!--
       <script src="app/controllers/authCtrl.js"></script>
