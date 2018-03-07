@@ -10,6 +10,10 @@ var i;
 var hotspotActive = document.getElementById("hotspot-active");
 var userName = "Destiny";
 
+var USERimgsrc = "<img src='img/user1.png'>";
+var pinsong = 3;
+
+
 
 	//DATA OF HOTSPOT LOCATIONS
 	var locations = [
@@ -261,7 +265,6 @@ function initMap() {
              setTimeout(function(){
 				
                  for (i = 0; i < locations.length; i++) { 
-                    enterHTML(locations[i][0],userName);
                      
 					var newLat = rangeChecker(lat, locations[i][1], temp );
 					// console.log(newLat);
@@ -316,6 +319,7 @@ function checkLocation(Lat,Lng){
     
     if(Lat == true && Lng == true){
         console.log(locations[i][0] +' '+  "HELLO");
+        enterHTML(locations[i][0],userName);
                        
         hotspotActive.classList.remove('hidden');
         hotspotActive.classList.add('visible');
@@ -329,9 +333,10 @@ function checkLocation(Lat,Lng){
 }
 
 function enterHTML(venueName,user){
-    var popup = "<p> HEY " + user + " you're at " + venueName + " collect your pinned song!"
-    
+    var popup = "<p class='active'> HEY " + user + "  collect your " + pinsong + " songs from the " + venueName + "</p>";
+
     console.log(popup);
     
-    hotspotActive.innerHTML = popup;
+    hotspotActive.innerHTML += popup;
+
 }

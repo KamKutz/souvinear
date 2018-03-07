@@ -400,3 +400,7 @@ box-shadow: 10px 10px 32px -1px rgba(0,0,0,0.11);
     -webkit-transiton: opacity 5s;
     transition: opacity 5s;
 }
+
+.active{
+    color: black;
+}
