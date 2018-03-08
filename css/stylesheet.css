@@ -375,18 +375,72 @@ button{
 #hotspot-active{
     position: absolute;
     
-    width: 300px;
-    height: 300px;
+    width: 340px;
+    height: 338px;
     top:10%;
-    margin: 40px;
+    margin: 20px;
     background-color: #EEEEF6;
     
     border: 2px solid #EEEEF6;
-    border-radius: 7px;
+    border-radius: 26px;
     
     -webkit-box-shadow: 10px 10px 32px -1px rgba(0,0,0,0.11);
 -moz-box-shadow: 10px 10px 32px -1px rgba(0,0,0,0.11);
 box-shadow: 10px 10px 32px -1px rgba(0,0,0,0.11);
+}
+
+.hotspot-top-container{
+    height: 200px;
+    width: 350px;
+}
+
+.hotspotBkg-container{
+    height: 220px;
+    position: absolute;
+    top: -4px;
+    left: -6px;
+}
+
+img.hotspotBkg{
+    position: relative;
+    width: 348px;
+}
+
+.userPic_container{
+    width: 340px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    text-align: center;
+}
+
+.userPic_container{
+    margin-top: 15%;
+}
+
+.hotspot-wave-container{
+    position: absolute;
+    top:35%;
+    left: -2px;
+}
+
+#hotspotBttn-container{
+    text-align: center;
+    margin-top: 25%;   
+}
+
+.hotspot-info-container img{
+    z-index: 999;
+    margin: 5%;
+    margin-left: 8%;
+    position: absolute;
+}
+
+#hotspot_text_container{
+   position: absolute;
+    margin: 10%;
+    margin-left: 25%;
+    font-size: 1rem;
 }
 
 .hidden{
